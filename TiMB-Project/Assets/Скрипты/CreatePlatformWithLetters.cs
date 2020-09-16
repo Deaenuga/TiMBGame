@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CreatePlatformWithLetters : MonoBehaviour
 {
+    public GameObject[] alphavite;
     public GameObject platform;
     public GameObject parentPlatform;
     public string[] letters;
+    private string alph = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +17,12 @@ public class CreatePlatformWithLetters : MonoBehaviour
         {
             for(int j=0;j<letters[i].Length;j++)
             {
-                Instantiate(platform, new Vector3(parentPlatform.transform.position.x, parentPlatform.transform.position.y, position),parentPlatform.transform.rotation);
-                position -= 1f;
+                if ((letters[i][j] != ' ') && (letters[i][j] != ',') && (letters[i][j] != '!') && (letters[i][j] != '?') && (letters[i][j] != '.') && (letters[i][j] != '-'))
+                {
+                    int num = alph.ToUpper().IndexOf(letters[i].ToUpper()[j]);
+                    Instantiate(alphavite[num], new Vector3(parentPlatform.transform.position.x, parentPlatform.transform.position.y, position), Quaternion.Euler(270,90,180));
+                    position -= 1f;
+                }
             }
         }
         
