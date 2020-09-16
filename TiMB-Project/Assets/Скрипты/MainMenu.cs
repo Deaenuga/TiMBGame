@@ -1,14 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public void PlayGame() //Метод отвечающий за переход со сцены Menu на сцену Game (расположен в объекте MainMenu)
     {
-        // Нету методов и немогу подключить директорию в using
+        SceneManager.LoadScene("Game");
 
     }
+
+    public void QuitGame() //Метод отвечащий за выход из игры (расположен в объекте MainMenu)
+    {
+        Debug.Log("Выход из игры");
+        Application.Quit();
+    }
+
+
 }
