@@ -13,23 +13,32 @@ public class Moving : MonoBehaviour
 
     private Letter[] alp;
     private TMP_InputField inputField;
+    private Vector3 toPosition;
 
     private int l;
     private int k;
     private int maxK;
     private string allLetters = "";
+
+    public float speed = 1;
+
+    private float progress;
     // Start is called before the first frame update
     void Start()
     {
         alp = FindObjectsOfType<Letter>();
         letters = FindObjectOfType<CreatePlatformWithLetters>().letters;
         inputField = FindObjectOfType<TMP_InputField>();
+        toPosition = player.transform.position;
+
+
+        inputField.Select();
 
         for (int i = 0; i < letters.Length; i++)
         {
             for (int j = 0; j < letters[i].Length; j++)
             {
-                if ((letters[i][j] != ' ') && (letters[i][j] != ',') && (letters[i][j] != '!') && (letters[i][j] != '?') && (letters[i][j] != '.') && (letters[i][j] != '-'))
+                if ((letters[i][j] != ',') && (letters[i][j] != '!') && (letters[i][j] != '?') && (letters[i][j] != '.') && (letters[i][j] != '-'))
                 {
                     allLetters += letters[i][j];
                 }
@@ -49,6 +58,7 @@ public class Moving : MonoBehaviour
             l = alp.Length;
             l--;
         }
+        Move(toPosition);
     }
 
     void ButtonPressed()
@@ -57,11 +67,17 @@ public class Moving : MonoBehaviour
         if (inputField.text.ToLower() == allLetters[k].ToString().ToLower())
         {
             Instantiate(platform, new Vector3(alp[l].transform.position.x, alp[l].transform.position.y, alp[l].transform.position.z), Quaternion.Euler(0,0,0));
+            toPosition = new Vector3(alp[l].transform.position.x, alp[l].transform.position.y, alp[l].transform.position.z);
             if (k < maxK-1) k++;
             if (l > 0) l--;
             inputField.text = null;
-            player.transform.position = new Vector3(alp[l].transform.position.x, alp[l].transform.position.y, alp[l].transform.position.z);
         }
         else inputField.text = null;
+    }
+
+    void Move(Vector3 toPosition)
+    {
+        progress += Time.deltaTime * speed;
+        transform.position = Vector3.Lerp(player.transform.position, toPosition, progress);
     }
 }
