@@ -19,5 +19,10 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void GoToShop() //Метод отвечающий за переход со сцены Menu на сцену Shop
+    {
+        SceneManager.LoadScene("Shop");
+
+    }
 
 }
