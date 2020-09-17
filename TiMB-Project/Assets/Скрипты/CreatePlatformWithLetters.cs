@@ -5,7 +5,6 @@ using UnityEngine;
 public class CreatePlatformWithLetters : MonoBehaviour
 {
     public GameObject[] alphavite;
-    public GameObject platform;
     public GameObject parentPlatform;
     public string[] letters;
     private string alph = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
@@ -25,12 +24,6 @@ public class CreatePlatformWithLetters : MonoBehaviour
                 }
             }
         }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }
