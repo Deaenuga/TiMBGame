@@ -4,3 +4,7 @@ BUTTONPERSON=Персонаж
 OPTIONSTEXT=Параметры
 VOLUMETEXT=Громкость
 BUTTONBACK=Назад
+BUTTONON=ВКЛ
+BUTTONOFF=ВЫКЛ
+MUSICTEXT=Музыка
+SOUNDEFFECTSTEXT=Звуковые эффекты
