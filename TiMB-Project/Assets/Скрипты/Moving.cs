@@ -22,7 +22,6 @@ public class Moving : MonoBehaviour
     private int maxK;
     private string allLetters = "";
 
-    public float speed = 1;
     private float playerY = 0;
     // Start is called before the first frame update
     void Start()
@@ -48,6 +47,7 @@ public class Moving : MonoBehaviour
         }
         k = 0;
         maxK = allLetters.Length;
+        Debug.Log( allLetters);
     }
 
     // Update is called once per frame
@@ -67,8 +67,7 @@ public class Moving : MonoBehaviour
 
     void ButtonPressed()
     {
-        //Debug.Log(inputField.text);
-        if (inputField.text.ToLower() == allLetters[k].ToString().ToLower())
+        if (inputField.text.ToUpper() == allLetters[k].ToString().ToUpper())
         {
             Instantiate(platform, new Vector3(alp[l].transform.position.x, alp[l].transform.position.y, alp[l].transform.position.z), Quaternion.Euler(0, 0, 0));
             toPosition = new Vector3(alp[l].transform.position.x, playerY, alp[l].transform.position.z);

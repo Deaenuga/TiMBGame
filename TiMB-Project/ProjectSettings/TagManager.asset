@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TextInput
   - Letters
+  - FirstPlatform
   layers:
   - Default
   - TransparentFX
