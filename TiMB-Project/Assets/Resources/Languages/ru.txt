@@ -1,0 +1,6 @@
+BUTTONPLAY=Играть
+BUTTONSHOP=Магазин
+BUTTONPERSON=Персонаж
+OPTIONSTEXT=Параметры
+VOLUMETEXT=Громкость
+BUTTONBACK=Назад
