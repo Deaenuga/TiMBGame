@@ -23,6 +23,7 @@ public class Moving : MonoBehaviour
     private string allLetters = "";
 
     public float speed = 1;
+    private float playerY = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class Moving : MonoBehaviour
         inputField = FindObjectOfType<TMP_InputField>();
         toPosition = player.transform.position;
         anim = player.GetComponent<Animator>();
+        playerY = player.transform.position.y;
 
         inputField.Select();
 
@@ -69,7 +71,7 @@ public class Moving : MonoBehaviour
         if (inputField.text.ToLower() == allLetters[k].ToString().ToLower())
         {
             Instantiate(platform, new Vector3(alp[l].transform.position.x, alp[l].transform.position.y, alp[l].transform.position.z), Quaternion.Euler(0, 0, 0));
-            toPosition = new Vector3(alp[l].transform.position.x, 2.647f, alp[l].transform.position.z);
+            toPosition = new Vector3(alp[l].transform.position.x, playerY, alp[l].transform.position.z);
             if (k < maxK - 1) k++;
             if (l > 0) l--;
             inputField.text = null;
