@@ -8,3 +8,4 @@ BUTTONON=ВКЛ
 BUTTONOFF=ВЫКЛ
 MUSICTEXT=Музыка
 SOUNDEFFECTSTEXT=Звуковые эффекты
+TEXTSHOP=Магазин
