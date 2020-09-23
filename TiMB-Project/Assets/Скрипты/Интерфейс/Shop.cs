@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Shop : MonoBehaviour
 {
-    public void GoToSettings() //Метод отвечающий за переход со сцены Shop на сцену Menu
+    public void GoToMenu() //Метод отвечающий за переход со сцены Shop на сцену Menu
     {
         SceneManager.LoadScene("Menu");
 
