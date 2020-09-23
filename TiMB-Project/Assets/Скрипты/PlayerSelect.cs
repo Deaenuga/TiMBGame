@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerSelect : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public GameObject[] playerModels;
+
+    private Cinemachine.CinemachineFreeLook gameCamera;
+
+    private int currPlayer;
+    void Start()
+    {
+        gameCamera = FindObjectOfType<Cinemachine.CinemachineFreeLook>();
+        currPlayer = PlayerPrefs.GetInt("currSkin");
+        for (int i = 0; i < playerModels.Length; i++)
+        {
+            if (i != currPlayer) playerModels[i].SetActive(false);
+            else playerModels[i].SetActive(true);
+        }
+        gameCamera.Follow = playerModels[currPlayer].transform;
+        gameCamera.GetRig(0).LookAt = playerModels[currPlayer].GetComponentInChildren<Head>().transform;
+        gameCamera.GetRig(1).LookAt = playerModels[currPlayer].GetComponentInChildren<Head>().transform;
+        gameCamera.GetRig(2).LookAt = playerModels[currPlayer].GetComponentInChildren<Bottom>().transform;
+    }
+}
