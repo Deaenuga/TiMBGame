@@ -8,6 +8,7 @@ public class BuyPlayer : MonoBehaviour
     public void ChangePlayer()
     {
         PlayerPrefs.SetInt("currSkin", numPlayer);
+
         PlayerPrefs.Save();
     }
 }
