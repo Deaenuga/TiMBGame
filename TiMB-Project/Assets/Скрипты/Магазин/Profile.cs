@@ -80,12 +80,14 @@ public class Profile : MonoBehaviour
 	{
 		previousSelectedIndex = newSelectedIndex;
 		newSelectedIndex = AvatarIndex;
-		PlayerPrefs.SetInt("currSkin", AvatarIndex);
-		PlayerPrefs.Save();
+		
 		AvatarsScrollView.GetChild (previousSelectedIndex).GetComponent <Image> ().color = DefaultAvatarColor;
 		AvatarsScrollView.GetChild (newSelectedIndex).GetComponent <Image> ().color = ActiveAvatarColor;
 
 		//Change Avatar
 		CurrentAvatar.sprite = AvatarsList [newSelectedIndex].Image;
+
+		PlayerPrefs.SetInt("currSkin", AvatarIndex);
+		PlayerPrefs.Save();
 	}
 }
