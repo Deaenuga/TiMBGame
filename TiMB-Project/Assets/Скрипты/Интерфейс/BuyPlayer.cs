@@ -42,6 +42,7 @@ public class BuyPlayer : MonoBehaviour
                 if (buys[i].isDown)
                 {
                     PlayerPrefs.SetInt("Player" + buys[i].index, 1);
+                    PlayerPrefs.Save();
                     UseCoins(price);
                     break;
                 }

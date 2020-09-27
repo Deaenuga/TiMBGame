@@ -13,6 +13,7 @@ TagManager:
   - Skin4
   - Skin5
   - Skin6
+  - BuyButton
   layers:
   - Default
   - TransparentFX
