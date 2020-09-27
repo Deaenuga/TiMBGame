@@ -2443,7 +2443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1116880302
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2636,7 +2636,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1285189608}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.36207724
+  m_Size: 0.3620773
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3690,7 +3690,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1421303304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bd400bf03eeba4f867cd35854ae7f6, type: 3}
+  m_Script: {fileID: 11500000, guid: f3ac12893dcc2cd4aa41d6db6afeb15b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1543485295
