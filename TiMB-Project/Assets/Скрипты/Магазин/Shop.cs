@@ -23,8 +23,8 @@ public class Shop : MonoBehaviour
 	[System.Serializable] public class ShopItem
 	{
 		public Sprite Image;
-		public int    Price;
-		public bool   IsPurchased = false;
+		public int Price;
+		public bool IsPurchased = false;
 	}
 
 	public List<ShopItem> ShopItemsList;
@@ -33,7 +33,7 @@ public class Shop : MonoBehaviour
 
 	[SerializeField] GameObject ItemTemplate;
 	GameObject g;
-	[SerializeField] Transform  ShopScrollView;
+	[SerializeField] Transform ShopScrollView;
 	[SerializeField] GameObject ShopPanel;
 	Button buyBtn;
 
@@ -78,14 +78,14 @@ public class Shop : MonoBehaviour
 
 		} else {
 			NoCoinsAnim.SetTrigger ("NoCoins");
-			Debug.Log ("Не хватает монет для покупки!!");
+			Debug.Log ("You don't have enough coins!!");
 		}
 	}
 
 	void DisableBuyButton ()
 	{
 		buyBtn.interactable = false;
-		buyBtn.transform.GetChild (0).GetComponent <Text> ().text = "КУПЛЕНО";
+		buyBtn.transform.GetChild (0).GetComponent <Text> ().text = "PURCHASED";
 	}
 	/*---------------------Open & Close shop--------------------------*/
 	public void OpenShop ()

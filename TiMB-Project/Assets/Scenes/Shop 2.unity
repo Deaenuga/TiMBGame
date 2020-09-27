@@ -2905,6 +2905,7 @@ MonoBehaviour:
   allCoinsUIText:
   - {fileID: 1499329143}
   - {fileID: 1546531649}
+  Coins: 1000
 --- !u!4 &2147009063
 Transform:
   m_ObjectHideFlags: 0
