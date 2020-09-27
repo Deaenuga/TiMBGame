@@ -1,93 +1,98 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
+﻿//using UnityEngine;
+//using UnityEngine.UI;
+//using System.Collections.Generic;
 
-public class Profile : MonoBehaviour
-{
-	#region Singlton:Profile
+//public class Profile : MonoBehaviour
+//{
+//	#region Singlton:Profile
 
-	public static Profile Instance;
+//	public static Profile Instance;
 
-	void Awake ()
-	{
-		if (Instance == null)
-			Instance = this;
-		else
-			Destroy (gameObject);
-	}
+//	void Awake()
+//	{
+//		//if (Instance == null)
+//		//	Instance = this;
+//		//else
+//		//	Destroy(gameObject);
+//		//DontDestroyOnLoad(gameObject);
+//	}
 
-	#endregion
+//	#endregion
 
-	public class Avatar
-	{
-		public Sprite Image;
-	}
+//	public class Avatar
+//	{
+//		public Sprite Image;
+//	}
 
-	public List<Avatar> AvatarsList;
+//	public List<Avatar> AvatarsList;
 
-	[SerializeField] GameObject AvatarUITemplate;
-	[SerializeField] Transform AvatarsScrollView;
+//	[SerializeField] GameObject AvatarUITemplate;
+//	[SerializeField] Transform AvatarsScrollView;
 
-	GameObject g;
-	int newSelectedIndex, previousSelectedIndex;
+//	GameObject g;
+//	int newSelectedIndex, previousSelectedIndex;
 
-	[SerializeField] Color ActiveAvatarColor;
-	[SerializeField] Color DefaultAvatarColor;
+//	[SerializeField] Color ActiveAvatarColor;
+//	[SerializeField] Color DefaultAvatarColor;
 
-	[SerializeField] Image CurrentAvatar;
+//	[SerializeField] Image CurrentAvatar;
 
-	void Start ()
-	{
-		GetAvailableAvatars ();
-		newSelectedIndex = previousSelectedIndex = 0;
-	}
+//	void Start()
+//	{
+//		GetAvailableAvatars();
+//		newSelectedIndex = previousSelectedIndex = 0;
+//	}
 
-	void GetAvailableAvatars ()
-	{
-		for (int i = 0; i < Shop.Instance.ShopItemsList.Count; i++) {
-			if (Shop.Instance.ShopItemsList [i].IsPurchased) {
-				//add all purchased avatars to AvatarsList
-				AddAvatar (Shop.Instance.ShopItemsList [i].Image);
-			}
-		}
+//	void GetAvailableAvatars()
+//	{
+//		for (int i = 0; i < Shop.Instance.ShopItemsList.Count; i++)
+//		{
+//			if (Shop.Instance.ShopItemsList[i].IsPurchased)
+//			{
+//				//add all purchased avatars to AvatarsList
+//				AddAvatar(Shop.Instance.ShopItemsList[i].Image);
+//			}
+//		}
 
-		SelectAvatar (newSelectedIndex);
-	}
+//		SelectAvatar(newSelectedIndex);
+//	}
 
-	public void AddAvatar (Sprite img)
-	{
-		if (AvatarsList == null)
-			AvatarsList = new List<Avatar> ();
-		
-		Avatar av = new Avatar (){ Image = img };
-		//add av to AvatarsList
-		AvatarsList.Add (av);
+//	public void AddAvatar(Sprite img)
+//	{
+//		if (AvatarsList == null)
+//			AvatarsList = new List<Avatar>();
 
-		//add avatar in the UI scroll view
-		g = Instantiate (AvatarUITemplate, AvatarsScrollView);
-		g.transform.GetChild (0).GetComponent <Image> ().sprite = av.Image;
+//		Avatar av = new Avatar() { Image = img };
+//		//add av to AvatarsList
+//		AvatarsList.Add(av);
 
-		//add click event
-		g.transform.GetComponent <Button> ().AddEventListener (AvatarsList.Count - 1, OnAvatarClick);
-	}
+//		//add avatar in the UI scroll view
+//		g = Instantiate(AvatarUITemplate, AvatarsScrollView);
+//		g.transform.GetChild(0).GetComponent<Image>().sprite = av.Image;
 
-	void OnAvatarClick (int AvatarIndex)
-	{
-		SelectAvatar (AvatarIndex);
-	}
+//		//add click event
+//		g.transform.GetComponent<Button>().AddEventListener(AvatarsList.Count - 1, OnAvatarClick);
+//	}
 
-	void SelectAvatar (int AvatarIndex)
-	{
-		previousSelectedIndex = newSelectedIndex;
-		newSelectedIndex = AvatarIndex;
-		
-		AvatarsScrollView.GetChild (previousSelectedIndex).GetComponent <Image> ().color = DefaultAvatarColor;
-		AvatarsScrollView.GetChild (newSelectedIndex).GetComponent <Image> ().color = ActiveAvatarColor;
+//	void OnAvatarClick(int AvatarIndex)
+//	{
+//		SelectAvatar(AvatarIndex);
+//	}
 
-		//Change Avatar
-		CurrentAvatar.sprite = AvatarsList [newSelectedIndex].Image;
+//	void SelectAvatar(int AvatarIndex)
+//	{
+//		previousSelectedIndex = newSelectedIndex;
+//		newSelectedIndex = AvatarIndex;
+//		AvatarsScrollView.GetChild(previousSelectedIndex).GetComponent<Image>().color = DefaultAvatarColor;
+//		AvatarsScrollView.GetChild(newSelectedIndex).GetComponent<Image>().color = ActiveAvatarColor;
 
-		PlayerPrefs.SetInt("currSkin", AvatarIndex);
-		PlayerPrefs.Save();
-	}
-}
+//		//Change Avatar
+//		CurrentAvatar.sprite = AvatarsList[newSelectedIndex].Image;
+//		PlayerPrefs.SetInt("currSkin", AvatarIndex);
+//		PlayerPrefs.Save();
+//	}
+//}
+
+
+
+
