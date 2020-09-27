@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
 public class Shop : MonoBehaviour
 {
 	#region Singlton:Shop
@@ -18,7 +19,7 @@ public class Shop : MonoBehaviour
 	}
 
 	#endregion
-
+	
 	[System.Serializable] public class ShopItem
 	{
 		public Sprite Image;
@@ -38,14 +39,19 @@ public class Shop : MonoBehaviour
 
 	void Start ()
 	{
+
+		Debug.Log(PlayerPrefs.GetInt("Coins").ToString());
 		int len = ShopItemsList.Count;
 		for (int i = 0; i < len; i++) {
 			g = Instantiate (ItemTemplate, ShopScrollView);
 			g.transform.GetChild (0).GetComponent <Image> ().sprite = ShopItemsList [i].Image;
 			g.transform.GetChild (1).GetChild (0).GetComponent <Text> ().text = ShopItemsList [i].Price.ToString ();
 			buyBtn = g.transform.GetChild (2).GetComponent <Button> ();
+			
 			if (ShopItemsList [i].IsPurchased) {
+				
 				DisableBuyButton ();
+
 			}
 			buyBtn.AddEventListener (i, OnShopItemBtnClicked);
 		}
@@ -56,16 +62,20 @@ public class Shop : MonoBehaviour
 		if (Game.Instance.HasEnoughCoins (ShopItemsList [itemIndex].Price)) {
 			Game.Instance.UseCoins (ShopItemsList [itemIndex].Price);
 			//purchase Item
-			ShopItemsList [itemIndex].IsPurchased = true;
+			ShopItemsList [itemIndex].IsPurchased = true; //если куплен то true
 
 			//disable the button
 			buyBtn = ShopScrollView.GetChild (itemIndex).GetChild (2).GetComponent <Button> ();
 			DisableBuyButton ();
+
 			//change UI text: coins
 			Game.Instance.UpdateAllCoinsUIText ();
 
+
+
 			//add avatar
 			Profile.Instance.AddAvatar (ShopItemsList [itemIndex].Image);
+
 		} else {
 			NoCoinsAnim.SetTrigger ("NoCoins");
 			Debug.Log ("You don't have enough coins!!");
