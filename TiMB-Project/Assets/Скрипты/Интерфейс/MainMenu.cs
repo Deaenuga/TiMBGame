@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour
 
     public void GoToShop() //Метод отвечающий за переход со сцены Menu на сцену Shop
     {
-        SceneManager.LoadScene("Shop 2");
+        SceneManager.LoadScene("Shop");
 
     }
 
