@@ -6,20 +6,23 @@ public class Game : MonoBehaviour
 	#region SIngleton:Game
 
 	public static Game Instance;
+	public Text[] allCoinsUIText;
 
 	void Awake ()
 	{
 		if (Instance == null) {
 			Instance = this;
-			DontDestroyOnLoad (gameObject);
+			//DontDestroyOnLoad (gameObject);
 		} else {
 			Destroy (gameObject);
 		}
+
+
 	}
 
 	#endregion
 
-	public Text[] allCoinsUIText;
+
 
 	//int Coins;
 	

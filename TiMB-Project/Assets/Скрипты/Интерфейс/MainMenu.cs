@@ -2,11 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 
 public class MainMenu : MonoBehaviour
 {
+
+    public Text textCoin;
+
+    void Start()
+    {
+        TextCoin();
+    }
+
+    public void TextCoin()
+    {
+        textCoin.text = PlayerPrefs.GetInt("Coins").ToString();
+    }
     public void PlayGame() //Метод отвечающий за переход со сцены Menu на сцену Game (расположен в объекте MainMenu)
     {
         SceneManager.LoadScene("Game");
