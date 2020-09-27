@@ -19,41 +19,36 @@ public class Game : MonoBehaviour
 
 	#endregion
 
-	public Text[] allCoinsUIText;
+	[SerializeField] Text[] allCoinsUIText;
 
-	//int Coins;
+	int Coins;
 	
 	
 
 	void Start ()
 	{
 		//PlayerPrefs.SetInt("Coins", 5000);
-		//Coins = PlayerPrefs.GetInt("Coins");
-		//UpdateAllCoinsUIText ();
-
-		for (int i = 0; i < allCoinsUIText.Length; i++)
-		{
-			allCoinsUIText[i].text = PlayerPrefs.GetInt("Coins").ToString();
-		}
+		Coins = PlayerPrefs.GetInt("Coins");
+		UpdateAllCoinsUIText ();
 	}
 
 	public void UseCoins (int amount)
 	{
-		PlayerPrefs.SetInt("Coins",PlayerPrefs.GetInt("Coins") - amount);
-		//PlayerPrefs.SetInt("Coins", Coins);
+		Coins -= amount;
+		PlayerPrefs.SetInt("Coins", Coins);
 		PlayerPrefs.Save();
 		
 	}
 
-	public bool HasEnoughCoins (int amount) //Было достаточно монет
+	public bool HasEnoughCoins (int amount)
 	{
-		return (PlayerPrefs.GetInt("Coins") >= amount);
+		return (Coins >= amount);
 	}
 
 	public void UpdateAllCoinsUIText ()
 	{
 		for (int i = 0; i < allCoinsUIText.Length; i++) {
-			allCoinsUIText [i].text = PlayerPrefs.GetInt("Coins").ToString ();
+			allCoinsUIText [i].text = Coins.ToString ();
 		}
 	}
 
