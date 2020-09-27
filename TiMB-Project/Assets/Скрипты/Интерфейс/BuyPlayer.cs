@@ -1,70 +1,54 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BuyPlayer : MonoBehaviour
 {
-    public int numPlayer;
-    public int Price;
-    public Button buyBtn;
-    //Делать кнопку активной IsPurchased
-
-    //public Text[] allCoinsUIText;
+    private int numPlayer;
+    private buyBtn[] buys;
 
 
     public void ChangePlayer()
     {
-        OnShopItemBtnClicked(numPlayer);
-        //PlayerPrefs.SetInt("currSkin", numPlayer); //При нажатии запоминает какой скин
+        PlayerPrefs.SetInt("currSkin", numPlayer); //При нажатии запоминает какой скин
         PlayerPrefs.Save();
     }
 
 
     void Start()
     {
-        PlayerPrefs.SetInt("Player1", 1);
-        PlayerPrefs.SetInt("Player2", 1);
-
-
-
-
+        buys = FindObjectsOfType<buyBtn>();
     }
-
-
-
-
-
-    void OnShopItemBtnClicked(int itemIndex) //При нажатии на кнопку делать
+    private void Update()
     {
-        //for (int i = 0; i < 5; i++)
-        //{
-        //    PlayerPrefs.GetInt("numPlayer");
-        //}
-
-        if (HasEnoughCoins(Price)) //Если Было достаточно монет
+        foreach (var item in buys)
         {
-            UseCoins(Price); //Отнимаем от PlayerPrefs стоимость самого скина
-            
-            DisableBuyButton(); //Делаем кнопку недействительной
-            PlayerPrefs.SetInt("Player1", 1);
-
-        }
-        else
-        {
-            
-            Debug.Log("У вас недостаточно денег!!");
+            if (PlayerPrefs.GetInt("Player" + item.index) == 1)
+            {
+                item.GetComponent<Button>().interactable = false;
+            }
         }
     }
 
-    void DisableBuyButton()
+    public void Buy()
     {
-        buyBtn.interactable = false;
-        //buyBtn.transform.GetChild(0).GetComponent<Text>().text = "Куплено";
+        int price = Convert.ToInt32(GameObject.FindGameObjectWithTag("BuyButton").GetComponentInChildren<Text>().text);
+        if (HasEnoughCoins(price))
+        {
+            for (int i = 0; i < buys.Length; i++)
+            {
+                if (buys[i].isDown)
+                {
+                    PlayerPrefs.SetInt("Player" + buys[i].index, 1);
+                    UseCoins(price);
+                    break;
+                }
+            }
+        }
+
     }
-
-
-
     public bool HasEnoughCoins(int amount) //если Было достаточно монет
     {
         return (PlayerPrefs.GetInt("Coins") >= amount);
@@ -72,7 +56,6 @@ public class BuyPlayer : MonoBehaviour
 
     public void UseCoins(int amount) //Отнимание суммы
     {
-        //Coins -= amount;
         PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - amount);
         PlayerPrefs.Save();
     }

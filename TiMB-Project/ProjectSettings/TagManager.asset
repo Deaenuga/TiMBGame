@@ -7,6 +7,12 @@ TagManager:
   - TextInput
   - Letters
   - FirstPlatform
+  - Skin1
+  - Skin2
+  - Skin3
+  - Skin4
+  - Skin5
+  - Skin6
   layers:
   - Default
   - TransparentFX

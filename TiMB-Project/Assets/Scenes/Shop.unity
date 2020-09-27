@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13132502}
   - component: {fileID: 13132501}
+  - component: {fileID: 13132503}
   m_Layer: 0
   m_Name: _sHOP
   m_TagString: Untagged
@@ -166,6 +167,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &13132503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13132500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48977e656976dd047a36d04998ac7672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1324170184}
+  - {fileID: 1571670429}
+  - {fileID: 109649643}
+  - {fileID: 782784558}
+  - {fileID: 2072149582}
+  - {fileID: 667031708}
 --- !u!1 &21235791
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +401,7 @@ GameObject:
   - component: {fileID: 109649643}
   m_Layer: 5
   m_Name: Button 3
-  m_TagString: Untagged
+  m_TagString: Skin3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -415,12 +435,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 109649641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ff91a784df8e8945aadab7b791e60b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 2
-  Price: 0
-  buyBtn: {fileID: 0}
+  Price: 300
+  isDown: 0
+  index: 2
+  BuyButton: {fileID: 2136266682}
 --- !u!114 &109649644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,8 +486,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 109649643}
-        m_TargetAssemblyTypeName: BuyPlayer, Assembly-CSharp
-        m_MethodName: ChangePlayer
+        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+        m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1189,8 +1210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 3
-  Price: 0
   buyBtn: {fileID: 0}
 --- !u!114 &567519699
 MonoBehaviour:
@@ -1496,7 +1515,7 @@ GameObject:
   - component: {fileID: 667031708}
   m_Layer: 5
   m_Name: Button 6
-  m_TagString: Untagged
+  m_TagString: Skin6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1530,12 +1549,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 667031706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ff91a784df8e8945aadab7b791e60b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 5
-  Price: 0
-  buyBtn: {fileID: 0}
+  Price: 600
+  isDown: 0
+  index: 5
+  BuyButton: {fileID: 2136266682}
 --- !u!114 &667031709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,8 +1600,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 667031708}
-        m_TargetAssemblyTypeName: BuyPlayer, Assembly-CSharp
-        m_MethodName: ChangePlayer
+        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+        m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1644,7 +1664,7 @@ GameObject:
   - component: {fileID: 782784558}
   m_Layer: 5
   m_Name: Button 4
-  m_TagString: Untagged
+  m_TagString: Skin4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1678,12 +1698,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 782784556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ff91a784df8e8945aadab7b791e60b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 3
-  Price: 0
-  buyBtn: {fileID: 0}
+  Price: 400
+  isDown: 0
+  index: 3
+  BuyButton: {fileID: 2136266682}
 --- !u!114 &782784559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1728,8 +1749,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 782784558}
-        m_TargetAssemblyTypeName: BuyPlayer, Assembly-CSharp
-        m_MethodName: ChangePlayer
+        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+        m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2314,8 +2335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 4
-  Price: 0
   buyBtn: {fileID: 0}
 --- !u!114 &1026143681
 MonoBehaviour:
@@ -2728,7 +2747,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1285189608}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.3620773
+  m_Size: 0.36207724
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3331,7 +3350,7 @@ GameObject:
   - component: {fileID: 1324170184}
   m_Layer: 5
   m_Name: Button 1
-  m_TagString: Untagged
+  m_TagString: Skin1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3365,12 +3384,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1324170182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ff91a784df8e8945aadab7b791e60b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 0
-  Price: 1000
-  buyBtn: {fileID: 1324170185}
+  Price: 100
+  isDown: 0
+  index: 0
+  BuyButton: {fileID: 2136266682}
 --- !u!114 &1324170185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3415,8 +3435,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1324170184}
-        m_TargetAssemblyTypeName: BuyPlayer, Assembly-CSharp
-        m_MethodName: ChangePlayer
+        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+        m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3684,7 +3704,7 @@ GameObject:
   - component: {fileID: 1571670429}
   m_Layer: 5
   m_Name: Button 2
-  m_TagString: Untagged
+  m_TagString: Skin2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3718,12 +3738,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1571670427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ff91a784df8e8945aadab7b791e60b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 1
-  Price: 0
-  buyBtn: {fileID: 0}
+  Price: 200
+  isDown: 0
+  index: 1
+  BuyButton: {fileID: 2136266682}
 --- !u!114 &1571670430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3768,8 +3789,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1571670429}
-        m_TargetAssemblyTypeName: BuyPlayer, Assembly-CSharp
-        m_MethodName: ChangePlayer
+        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+        m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4125,8 +4146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 5
-  Price: 0
   buyBtn: {fileID: 0}
 --- !u!114 &1925430496
 MonoBehaviour:
@@ -4426,7 +4445,7 @@ GameObject:
   - component: {fileID: 2072149582}
   m_Layer: 5
   m_Name: Button 5
-  m_TagString: Untagged
+  m_TagString: Skin5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4460,12 +4479,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2072149580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ec69110d15a62a42ad04068aa10c126, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ff91a784df8e8945aadab7b791e60b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numPlayer: 4
-  Price: 0
-  buyBtn: {fileID: 0}
+  Price: 500
+  isDown: 0
+  index: 4
+  BuyButton: {fileID: 2136266682}
 --- !u!114 &2072149583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4510,8 +4530,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2072149582}
-        m_TargetAssemblyTypeName: BuyPlayer, Assembly-CSharp
-        m_MethodName: ChangePlayer
+        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+        m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5178,8 +5198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be8e2e627e54e524c8cb2f8ad1bb6618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreTextCoin: {fileID: 9166445318040480532}
-  ScoreTextDollar: {fileID: 4406204044252181891}
 --- !u!114 &9166445318040480532
 MonoBehaviour:
   m_ObjectHideFlags: 0

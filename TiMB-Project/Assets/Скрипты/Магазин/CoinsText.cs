@@ -8,7 +8,7 @@ public class CoinsText : MonoBehaviour
     // Start is called before the first frame update
     public Text[] allCoinsUIText;
 
-    void Start()
+    void Update()
     {
         UpdateAllCoinsUIText();
     }
