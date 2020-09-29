@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BuyPlayer : MonoBehaviour
@@ -59,5 +60,9 @@ public class BuyPlayer : MonoBehaviour
     {
         PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - amount);
         PlayerPrefs.Save();
+    }
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
