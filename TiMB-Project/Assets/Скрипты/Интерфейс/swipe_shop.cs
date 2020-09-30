@@ -47,7 +47,7 @@ public class swipe_shop : MonoBehaviour
             
             if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
             {
-                Debug.LogWarning("Current Selected Level" + i); //Отслеживаем какой магазин выбран
+                //Debug.LogWarning("Current Selected Level" + i); //Отслеживаем какой магазин выбран
                 circle[i].SetActive(true);
 
                 transform.GetChild(i).localScale = Vector2.Lerp(transform.GetChild(i).localScale, new Vector2(1f, 1f), 0.1f);

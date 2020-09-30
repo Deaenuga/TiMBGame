@@ -7,13 +7,17 @@ using UnityEngine.EventSystems;
 public class buyBtn : MonoBehaviour
 {
     public int Price;
-    public GameObject model;
+    public GameObject modelSkin;
     [HideInInspector]
     public bool isDown=false;
     public int index;
-    public Button BuyButton; 
+    public Button BuyButton;
+
+
+
     public void Pressed()
     {
+        
         buyBtn[] buttons = FindObjectsOfType<buyBtn>();
         foreach (var item in buttons)
         {
@@ -21,18 +25,38 @@ public class buyBtn : MonoBehaviour
         }
         isDown = true;
         for (int i = 0; i < buttons.Length; i++)
-        {         
-            if (buttons[i].index!=index)
+        {
+
+            // modelSkin.SetActive(false);
+            if (buttons[i].index!=index) //Если кнопка не выбрана
             {
-                buttons[i].GetComponent<Image>().color = Color.white;         
+                //modelSkin.SetActive(false);
+                Debug.Log(index);
+                buttons[i].GetComponent<Image>().color = Color.blue;
+                buttons[i].modelSkin.SetActive(false);
+
             }
             else
             {
-                this.GetComponent<Image>().color = Color.red;
-                if(PlayerPrefs.GetInt("Player"+index)==0)
-                BuyButton.GetComponentInChildren<Text>().text = Price.ToString();
+                //Выбран элемент
+                for (int k = 0; k < buttons.Length; k++)
+                {
+                    if (k!=i)
+                    {
+                        this.GetComponent<Image>().color = Color.red;
+                        modelSkin.SetActive(true);
+
+                    }
+                   
+                }
+                
+
+                if (PlayerPrefs.GetInt("Player"+index)==0)
+                    BuyButton.GetComponentInChildren<Text>().text = Price.ToString(); //Выводим значение денег в кнопку
                 else BuyButton.GetComponentInChildren<Text>().text = "Куплено";
             }
+            
+                
         }
     }
 }

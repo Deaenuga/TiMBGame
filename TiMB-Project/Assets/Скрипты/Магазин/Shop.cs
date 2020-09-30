@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Shop : MonoBehaviour
 {
+    public GameObject[] playerModels;
     void Start()
     {
        PlayerPrefs.SetInt("Coins", 5000);
@@ -14,6 +15,8 @@ public class Shop : MonoBehaviour
         PlayerPrefs.SetInt("Player3", 0);
         PlayerPrefs.SetInt("Player4", 0);
         PlayerPrefs.SetInt("Player5", 0);
+
+
     }
 
 
