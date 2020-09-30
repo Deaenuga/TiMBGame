@@ -5,17 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    //bool isClicked; //вводим булевую переменную
     public GameObject pauseMenuUI;
-    //public static bool GameIsPaused;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 
     public void Resume()
     {
