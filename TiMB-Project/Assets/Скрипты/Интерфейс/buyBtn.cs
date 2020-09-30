@@ -32,7 +32,7 @@ public class buyBtn : MonoBehaviour
             {
                 //modelSkin.SetActive(false);
                 Debug.Log(index);
-                buttons[i].GetComponent<Image>().color = Color.blue;
+                buttons[i].GetComponent<Image>().color = Color.white;
                 buttons[i].modelSkin.SetActive(false);
 
             }
@@ -43,7 +43,7 @@ public class buyBtn : MonoBehaviour
                 {
                     if (k!=i)
                     {
-                        this.GetComponent<Image>().color = Color.red;
+                        this.GetComponent<Image>().color = Color.yellow;
                         modelSkin.SetActive(true);
 
                     }
@@ -52,7 +52,10 @@ public class buyBtn : MonoBehaviour
                 
 
                 if (PlayerPrefs.GetInt("Player"+index)==0)
+                {
                     BuyButton.GetComponentInChildren<Text>().text = Price.ToString(); //Выводим значение денег в кнопку
+                    BuyButton.interactable = true;
+                }
                 else BuyButton.GetComponentInChildren<Text>().text = "Куплено";
             }
             

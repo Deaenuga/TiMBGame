@@ -45,8 +45,11 @@ public class BuyPlayer : MonoBehaviour
                     PlayerPrefs.SetInt("Player" + buys[i].index, 1);
                     PlayerPrefs.Save();
                     UseCoins(price);
+                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;
+                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
                     break;
                 }
+
             }
         }
 
@@ -59,6 +62,7 @@ public class BuyPlayer : MonoBehaviour
     public void UseCoins(int amount) //Отнимание суммы
     {
         PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - amount);
+        GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
         PlayerPrefs.Save();
     }
     public void LoadMenu()
