@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class swipe_shop : MonoBehaviour
 {
     public GameObject scrollbar;
-    public GameObject[] circle;
+    public Image[] circle;
     private float scroll_pos = 0;
     float[] pos;
+    int k = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -47,8 +48,15 @@ public class swipe_shop : MonoBehaviour
             
             if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
             {
-                //Debug.LogWarning("Current Selected Level" + i); //Отслеживаем какой магазин выбран
-                circle[i].SetActive(true);
+                Debug.LogWarning("Current Selected Level" + i); //Отслеживаем какой магазин выбран
+
+                
+                
+                
+                circle[i].color = Color.black;
+
+
+
 
                 transform.GetChild(i).localScale = Vector2.Lerp(transform.GetChild(i).localScale, new Vector2(1f, 1f), 0.1f);
                 for (int j = 0; j < pos.Length; j++)
@@ -56,10 +64,26 @@ public class swipe_shop : MonoBehaviour
                     if (j != i)
                     {
                         transform.GetChild(j).localScale = Vector2.Lerp(transform.GetChild(j).localScale, new Vector2(0.8f, 0.8f), 0.1f);
-                        circle[i].SetActive(true);
+                        
                     }
                 }
+
+                
             }
+            else
+            {
+                k = i;
+                circle[k].color = Color.white;
+                
+                Debug.LogWarning("предуды" + k);
+            }
+           
+
+
+
+
+
+
         }
 
     }

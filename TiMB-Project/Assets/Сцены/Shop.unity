@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 13132501}
   - component: {fileID: 13132503}
   m_Layer: 0
-  m_Name: _sHOP
+  m_Name: _SHOP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -697}
+  m_AnchoredPosition: {x: 0, y: -710}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41094209
@@ -3837,9 +3837,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollbar: {fileID: 1152282599}
   circle:
-  - {fileID: 198538013}
-  - {fileID: 161034042}
-  - {fileID: 322645639}
+  - {fileID: 198538015}
+  - {fileID: 161034044}
+  - {fileID: 322645641}
 --- !u!1 &1955763767
 GameObject:
   m_ObjectHideFlags: 0
