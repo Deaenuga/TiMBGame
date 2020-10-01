@@ -9,3 +9,4 @@ BUTTONOFF=ВЫКЛ
 MUSICTEXT=Музыка
 SOUNDEFFECTSTEXT=Звуковые эффекты
 TEXTSHOP=Магазин
+AVERAGESPEED=Ваша средняя скорость печати:
