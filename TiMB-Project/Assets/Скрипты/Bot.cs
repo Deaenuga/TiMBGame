@@ -17,7 +17,7 @@ public class Bot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        countLetters = string.Join(" ", FindObjectOfType<CreatePlatformWithLetters>().letters).Length;
+        countLetters = string.Join(" ", FindObjectOfType<CreatePlatformWithLetters>().letters[PlayerPrefs.GetInt("currLevel")]).Length;
         anim = this.GetComponent<Animator>();
         moveTo = this.transform.position;
         position = botPlatformEnd.transform.position.z - 0.2f;
