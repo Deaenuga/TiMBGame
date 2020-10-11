@@ -48,7 +48,7 @@ public class swipe_shop : MonoBehaviour
             
             if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
             {
-                Debug.LogWarning("Current Selected Level" + i); //Отслеживаем какой магазин выбран
+                //Debug.LogWarning("Current Selected Level" + i); //Отслеживаем какой магазин выбран
 
                 
                 
@@ -75,7 +75,7 @@ public class swipe_shop : MonoBehaviour
                 k = i;
                 circle[k].color = Color.white;
                 
-                Debug.LogWarning("предуды" + k);
+                //Debug.LogWarning("предуды" + k);
             }
            
 

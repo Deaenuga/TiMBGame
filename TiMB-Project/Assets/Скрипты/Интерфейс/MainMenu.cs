@@ -88,4 +88,9 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    public void GoToPerson()
+    {
+        SceneManager.LoadScene("Person");
+    }
+
 }
