@@ -27,9 +27,12 @@ public class PlayerSelect : MonoBehaviour
                 PlayerPrefs.SetInt("Win", 0);
             }
         }
-        gameCamera.Follow = playerModels[currPlayer].transform;
-        gameCamera.GetRig(0).LookAt = playerModels[currPlayer].GetComponentInChildren<Head>().transform;
-        gameCamera.GetRig(1).LookAt = playerModels[currPlayer].GetComponentInChildren<Head>().transform;
-        gameCamera.GetRig(2).LookAt = playerModels[currPlayer].GetComponentInChildren<Bottom>().transform;
+        if (gameCamera != null)
+        {
+            gameCamera.Follow = playerModels[currPlayer].transform;
+            gameCamera.GetRig(0).LookAt = playerModels[currPlayer].GetComponentInChildren<Head>().transform;
+            gameCamera.GetRig(1).LookAt = playerModels[currPlayer].GetComponentInChildren<Head>().transform;
+            gameCamera.GetRig(2).LookAt = playerModels[currPlayer].GetComponentInChildren<Bottom>().transform;
+        }
     }
 }
