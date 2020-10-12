@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Advertisements;
 
 
 
@@ -16,6 +17,11 @@ public class MainMenu : MonoBehaviour
         TextCoin(); 
         PlayerPrefs.SetInt("LocationNum", 0);
         PlayerPrefs.SetInt("currLevel", 0);
+
+        if (Advertisement.isSupported)
+        {
+            Advertisement.Initialize("3860680", false);
+        }
     }
 
     public void TextCoin()
@@ -37,6 +43,10 @@ public class MainMenu : MonoBehaviour
 
     public void GoToPerson()
     {
+        if (Advertisement.IsReady())
+        {
+            Advertisement.Show("video"); //Вид рекламы который можно пропустить
+        }
         SceneManager.LoadScene("Person");
     }
 
