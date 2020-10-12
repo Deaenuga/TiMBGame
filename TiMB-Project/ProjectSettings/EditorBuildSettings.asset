@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/\u0421\u0446\u0435\u043D\u044B/Person.unity"
     guid: 6f184efc618793440a46727ee26faaa4
+  - enabled: 1
+    path: "Assets/\u0421\u0446\u0435\u043D\u044B/MenuEndLevel.unity"
+    guid: 6646aa56394416d45bf51c67e3347ce1
   m_configObjects: {}
