@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bot : MonoBehaviour
 {
-    private Animator anim;
+    public Animator anim;
     private bool moving = false;
     private int countLetters;
     private float position = 0;
@@ -18,7 +18,6 @@ public class Bot : MonoBehaviour
     void Start()
     {
         countLetters = string.Join(" ", FindObjectOfType<CreatePlatformWithLetters>().letters[PlayerPrefs.GetInt("currLevel")]).Length;
-        anim = this.GetComponent<Animator>();
         moveTo = this.transform.position;
         position = botPlatformEnd.transform.position.z - 0.2f;
     }
