@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bot : MonoBehaviour
 {
@@ -26,14 +27,20 @@ public class Bot : MonoBehaviour
     void Update()
     {
         if(FindObjectOfType<Moving>().start) time += Time.deltaTime;
-        if(currLetter<countLetters)
-        if (time > botSpeed) 
+        if (currLetter < countLetters)
         {
+            if (time > botSpeed)
+            {
                 currLetter++;
-            Instantiate(platform, new Vector3(botPlatformEnd.transform.position.x, botPlatformEnd.transform.position.y, position), Quaternion.Euler(0, 0, 0));
-            moveTo = new Vector3(botPlatformEnd.transform.position.x, this.transform.position.y, position);
-            position -= .5f;
-            time = 0;
+                Instantiate(platform, new Vector3(botPlatformEnd.transform.position.x, botPlatformEnd.transform.position.y, position), Quaternion.Euler(0, 0, 0));
+                moveTo = new Vector3(botPlatformEnd.transform.position.x, this.transform.position.y, position);
+                position -= .5f;
+                time = 0;
+            }
+        }else
+        {
+            PlayerPrefs.SetInt("Win", 0);
+            SceneManager.LoadScene("MenuEndLevel");
         }
         Move(moveTo);
         AnimateBot();
