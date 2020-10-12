@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         TextCoin(); 
-        //PlayerPrefs.SetInt("LocationNum", 0);
+        PlayerPrefs.SetInt("LocationNum", 0);
         PlayerPrefs.SetInt("currLevel", 0);
     }
 
@@ -24,13 +24,15 @@ public class MainMenu : MonoBehaviour
     }
     public void PlayGame() //Метод отвечающий за переход со сцены Menu на сцену Game (расположен в объекте MainMenu)
     {
-        SceneManager.LoadScene("GameBonus");
-        /*int GameNum = PlayerPrefs.GetInt("LocationNum");
+        //SceneManager.LoadScene("GameBonus");
+        Debug.Log(PlayerPrefs.GetInt("currLevel"));
+        int GameNum = PlayerPrefs.GetInt("LocationNum");
         int currLevel = PlayerPrefs.GetInt("currLevel");
-        if (currLevel > 6) { 
+        if (currLevel > 5) { 
             GameNum += 1; 
             PlayerPrefs.SetInt("LocationNum", GameNum);
             PlayerPrefs.SetInt("currLevel",0);
+
             PlayerPrefs.Save();
             switch (GameNum)
             {
@@ -73,7 +75,7 @@ public class MainMenu : MonoBehaviour
                 }
             default:
                 break;
-        } */
+        } 
     }
 
     public void QuitGame() //Метод отвечащий за выход из игры (расположен в объекте MainMenu)
