@@ -2883,6 +2883,7 @@ GameObject:
   - component: {fileID: 1402877054}
   - component: {fileID: 1402877053}
   - component: {fileID: 1402877052}
+  - component: {fileID: 1402877056}
   - component: {fileID: 1402877055}
   m_Layer: 5
   m_Name: Play Button
@@ -2954,9 +2955,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1091629672}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 1402877056}
+        m_TargetAssemblyTypeName: NextLvl, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3023,6 +3024,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1402877056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402877050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601f51e69531532479e8d8c685d2a57c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1522866158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3595,7 +3608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05154584, y: 0.47175}
   m_AnchorMax: {x: 0.95455843, y: 0.7765625}
-  m_AnchoredPosition: {x: -3.2945557, y: 2.8673096}
+  m_AnchoredPosition: {x: -3.2944336, y: 2.8673096}
   m_SizeDelta: {x: -5.9456177, y: 0.9057617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1990728904

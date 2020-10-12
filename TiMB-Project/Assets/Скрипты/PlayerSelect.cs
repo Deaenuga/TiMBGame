@@ -17,7 +17,15 @@ public class PlayerSelect : MonoBehaviour
         for (int i = 0; i < playerModels.Length; i++)
         {
             if (i != currPlayer) playerModels[i].SetActive(false);
-            else playerModels[i].SetActive(true);
+            else
+            {
+                playerModels[i].SetActive(true);
+                if(PlayerPrefs.GetInt("Win")==0)
+                {
+                    playerModels[i].GetComponent<Animator>().SetBool("Lose", true);
+                }
+                PlayerPrefs.SetInt("Win", 0);
+            }
         }
         gameCamera.Follow = playerModels[currPlayer].transform;
         gameCamera.GetRig(0).LookAt = playerModels[currPlayer].GetComponentInChildren<Head>().transform;
