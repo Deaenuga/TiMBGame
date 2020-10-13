@@ -15,8 +15,8 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         TextCoin(); 
-        PlayerPrefs.SetInt("LocationNum", 0);
-        PlayerPrefs.SetInt("currLevel", 0);
+        //PlayerPrefs.SetInt("LocationNum", 0);
+        //PlayerPrefs.SetInt("currLevel", 0);
 
         if (Advertisement.isSupported)
         {

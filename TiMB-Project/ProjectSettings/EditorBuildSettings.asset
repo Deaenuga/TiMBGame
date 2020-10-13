@@ -18,13 +18,13 @@ EditorBuildSettings:
     path: "Assets/\u0421\u0446\u0435\u043D\u044B/Game1.unity"
     guid: 572c63401ba75254e916a12f147bca6f
   - enabled: 1
-    path: "Assets/\u0421\u0446\u0435\u043D\u044B/Game1Bonus.unity"
+    path: "Assets/\u0421\u0446\u0435\u043D\u044B/Game2Bonus.unity"
     guid: 59262bb8a5fd32348a4f63f922d2bdea
   - enabled: 1
     path: "Assets/\u0421\u0446\u0435\u043D\u044B/Game2.unity"
     guid: 5b9499de20e46834a9ab95ec18ab34c9
   - enabled: 1
-    path: "Assets/\u0421\u0446\u0435\u043D\u044B/Game2Bonus.unity"
+    path: "Assets/\u0421\u0446\u0435\u043D\u044B/Game1Bonus.unity"
     guid: 6bab36e4771ca9c45b229652ab294fa1
   - enabled: 1
     path: "Assets/\u0421\u0446\u0435\u043D\u044B/Shop.unity"
