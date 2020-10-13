@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WinLoseCoins : MonoBehaviour
+public class WinLoseCoins : MonoBehaviour //Класс для вывода заработанных монет (на сцене конца уровня)
 {
 
     public Text coins;
@@ -13,8 +13,10 @@ public class WinLoseCoins : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("Win") == 1)
         {
-            coins.text = "Заработано:" + PlayerPrefs.GetInt("currCoins").ToString();
+            coins.text = "Заработано:" + PlayerPrefs.GetInt("currCoins").ToString();  
+            //Заработанные монеты в конце уровня
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + PlayerPrefs.GetInt("currCoins"));
+
             PlayerPrefs.Save();
         }
         else
