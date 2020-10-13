@@ -2,11 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Advertisements;
 
 public class NextLvl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void Play()
+
+    private void Start()
+    {
+        
+    }
+
+// Start is called before the first frame update
+public void Play()
     {
         int GameNum = PlayerPrefs.GetInt("LocationNum");
         int currLevel = PlayerPrefs.GetInt("currLevel");
@@ -60,6 +67,8 @@ public class NextLvl : MonoBehaviour
                     break;
             }
     }
+
+
 
     public void Menu()
     {
