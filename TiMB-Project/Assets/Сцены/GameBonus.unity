@@ -744,6 +744,7 @@ MonoBehaviour:
   correctEffect: {fileID: 120410, guid: 6636b3078b0905e489f698a11b7a6b6b, type: 3}
   failEffect: {fileID: 100748, guid: cd4d7020429cde74db076ffa72495419, type: 3}
   time: {fileID: 1459114399}
+  coins: {fileID: 0}
   typeSpeed: 0
   start: 0
   finish: 0
@@ -890,7 +891,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339393732}
-  m_LocalRotation: {x: 0.1802911, y: 0.7437431, z: -0.22191954, w: 0.6042293}
+  m_LocalRotation: {x: 0.18029109, y: 0.7437432, z: -0.22191954, w: 0.6042292}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1324,6 +1325,7 @@ MonoBehaviour:
   correctEffect: {fileID: 120410, guid: 6636b3078b0905e489f698a11b7a6b6b, type: 3}
   failEffect: {fileID: 100748, guid: cd4d7020429cde74db076ffa72495419, type: 3}
   time: {fileID: 1459114399}
+  coins: {fileID: 0}
   typeSpeed: 0
   start: 0
   finish: 0
@@ -2050,7 +2052,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.1802911, y: 0.74374306, z: -0.2219195, w: 0.60422933}
+  m_LocalRotation: {x: 0.18029107, y: 0.7437432, z: -0.22191954, w: 0.6042292}
   m_LocalPosition: {x: -10.54841, y: 5.661851, z: 0.09593105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2127,6 +2129,7 @@ MonoBehaviour:
   correctEffect: {fileID: 120410, guid: 6636b3078b0905e489f698a11b7a6b6b, type: 3}
   failEffect: {fileID: 100748, guid: cd4d7020429cde74db076ffa72495419, type: 3}
   time: {fileID: 1459114399}
+  coins: {fileID: 0}
   typeSpeed: 0
   start: 0
   finish: 0
@@ -2223,6 +2226,7 @@ MonoBehaviour:
   correctEffect: {fileID: 120410, guid: 6636b3078b0905e489f698a11b7a6b6b, type: 3}
   failEffect: {fileID: 100748, guid: cd4d7020429cde74db076ffa72495419, type: 3}
   time: {fileID: 1459114399}
+  coins: {fileID: 0}
   typeSpeed: 0
   start: 0
   finish: 0
@@ -2559,6 +2563,7 @@ MonoBehaviour:
   correctEffect: {fileID: 120410, guid: 6636b3078b0905e489f698a11b7a6b6b, type: 3}
   failEffect: {fileID: 100748, guid: cd4d7020429cde74db076ffa72495419, type: 3}
   time: {fileID: 1459114399}
+  coins: {fileID: 0}
   typeSpeed: 0
   start: 0
   finish: 0
