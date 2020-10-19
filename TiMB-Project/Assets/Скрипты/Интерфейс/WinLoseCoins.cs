@@ -28,11 +28,21 @@ public class WinLoseCoins : MonoBehaviour //Класс для вывода за�
             buttonLose.SetActive(false);
             buttonWin.SetActive(true);
 
-            coins.text = "Заработано:" + PlayerPrefs.GetInt("currCoins").ToString();  
-            //Заработанные монеты в конце уровня
-            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + PlayerPrefs.GetInt("currCoins"));
-
-            PlayerPrefs.Save();
+            
+            if(PlayerPrefs.GetInt("LocationNum")>0 && PlayerPrefs.GetInt("currLevel")==1)
+            {
+                coins.text = "Заработано:" + PlayerPrefs.GetInt("currCoins").ToString();
+                //Заработанные монеты в конце уровня
+                PlayerPrefs.SetInt("Dollars", PlayerPrefs.GetInt("Dollars") + PlayerPrefs.GetInt("currCoins"));
+                PlayerPrefs.Save();
+            }
+            else
+            {
+                coins.text = "Заработано:" + PlayerPrefs.GetInt("currCoins").ToString();
+                //Заработанные монеты в конце уровня
+                PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + PlayerPrefs.GetInt("currCoins"));
+                PlayerPrefs.Save();
+            }
         }
         else
         {
@@ -51,8 +61,14 @@ public class WinLoseCoins : MonoBehaviour //Класс для вывода за�
         {
             Advertisement.Show("rewardedVideo"); //Вид рекламы который можно пропустить
         }
-        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + (PlayerPrefs.GetInt("currCoins")));
-        //Полученные монеты на уровне увеличиваем в два раза
+        if (PlayerPrefs.GetInt("LocationNum") > 0 && PlayerPrefs.GetInt("currLevel") == 1)
+        {
+            PlayerPrefs.SetInt("Dollars", PlayerPrefs.GetInt("Dollars") + (PlayerPrefs.GetInt("currCoins")));         //Полученные доллары на уровне увеличиваем в два раза
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + (PlayerPrefs.GetInt("currCoins")));         //Полученные монеты на уровне увеличиваем в два раза
+        }
 
         BtnVideoX2.SetActive(false);
         //BtnVideoX2.GetComponentInChildren<Text>().text = "😅";

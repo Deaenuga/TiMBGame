@@ -8,11 +8,15 @@ public class DailyBonus : MonoBehaviour
 {
 
     public GameObject[] daysPanel;
+    public Text[] daysReward;
 
     public Canvas mainCanvas;
     public Canvas dailyCanvas;
 
+    public Button claimButton;
+
     private int currDay;
+    private bool claimed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -48,13 +52,16 @@ public class DailyBonus : MonoBehaviour
         PlayerPrefs.SetInt("RewardedMinute", RewardedDT.Minute);
         PlayerPrefs.SetInt("RewardedSecond", RewardedDT.Second);
         daysPanel[currDay].GetComponent<Image>().color = Color.red;
-        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysPanel[currDay].GetComponentInChildren<Text>().text));
+        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysReward[currDay].text));
         PlayerPrefs.SetInt("currDay", currDay + 1);
+        claimed = true;
+        claimButton.enabled = false;
     }
 
     public void closeDailyBonusPage()
     {
-        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysPanel[currDay].GetComponentInChildren<Text>().text));
+        if(!claimed)
+        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysReward[currDay].text));
         mainCanvas.gameObject.SetActive(true);
         dailyCanvas.gameObject.SetActive(false);
     }

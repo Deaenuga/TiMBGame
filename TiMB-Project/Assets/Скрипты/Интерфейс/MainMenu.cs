@@ -11,12 +11,13 @@ public class MainMenu : MonoBehaviour
 {
 
     public Text textCoin;
+    public Text textDollar;
 
     void Start()
     {
         TextCoin(); 
-        //PlayerPrefs.SetInt("LocationNum", 0);
-        //PlayerPrefs.SetInt("currLevel", 0);
+       // PlayerPrefs.SetInt("LocationNum", 0);
+        //PlayerPrefs.SetInt("currLevel", 6);
 
         if (Advertisement.isSupported)
         {
@@ -24,9 +25,14 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        TextCoin();
+    }
     public void TextCoin()
     {
         textCoin.text = PlayerPrefs.GetInt("Coins").ToString();
+        textDollar.text = PlayerPrefs.GetInt("Dollars").ToString();
     }
 
     public void QuitGame() //Метод отвечащий за выход из игры (расположен в объекте MainMenu)
