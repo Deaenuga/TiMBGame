@@ -656,6 +656,10 @@ PrefabInstance:
       propertyPath: coins
       value: 
       objectReference: {fileID: 1475046863}
+    - target: {fileID: 1469752756738608892, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
     - target: {fileID: 1521390645193683118, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
@@ -732,7 +736,39 @@ PrefabInstance:
       propertyPath: coins
       value: 
       objectReference: {fileID: 1475046863}
+    - target: {fileID: 3255301018268768972, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
+    - target: {fileID: 3701522082240406234, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
+    - target: {fileID: 4746340752060057773, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
+    - target: {fileID: 5057180566598531571, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
     - target: {fileID: 5374368384659751364, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
+    - target: {fileID: 6747217238227694258, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
+    - target: {fileID: 7773081115064224090, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
+    - target: {fileID: 9079223892136859630, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: coins
+      value: 
+      objectReference: {fileID: 1475046863}
+    - target: {fileID: 9168362352694722527, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
       objectReference: {fileID: 1475046863}
@@ -786,6 +822,51 @@ GameObject:
 --- !u!1 &264652557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2075416887235895636, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6823554347330260133, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4654828093489043870, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 261269508340287159, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8353900947181793804, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5380929126589123246, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8325165167283375632, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7539281188962028854, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4038292260970938208, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+  m_PrefabInstance: {fileID: 264652547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264652566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5557792002622059072, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
   m_PrefabInstance: {fileID: 264652547}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &339393732
@@ -1717,6 +1798,15 @@ MonoBehaviour:
   - {fileID: 264652551}
   - {fileID: 264652550}
   - {fileID: 264652549}
+  - {fileID: 264652566}
+  - {fileID: 264652565}
+  - {fileID: 264652564}
+  - {fileID: 264652563}
+  - {fileID: 264652562}
+  - {fileID: 264652561}
+  - {fileID: 264652560}
+  - {fileID: 264652559}
+  - {fileID: 264652558}
 --- !u!1 &1086474126
 GameObject:
   m_ObjectHideFlags: 3
@@ -3136,19 +3226,23 @@ MonoBehaviour:
   - {fileID: 585332627084464999, guid: 0a0f8e9d4b3afdc4390b2b1a8431d3b1, type: 3}
   parentPlatform: {fileID: 1868946222}
   letters:
-  - "\u0411\u0435\u0433\u0438 \u0432\u043F\u0435\u0440\u0435\u0434 \u0438 \u043D\u0435
-    \u043E\u0433\u043B\u044F\u0434\u044B\u0432\u0430\u0439\u0441\u044F \u043D\u0430\u0437\u0430\u0434.
-    \u0421\u043B\u043E\u0436\u043D\u0435\u0435 \u0432\u0441\u0435\u0433\u043E \u0432
-    \u044D\u0442\u043E\u0439 \u0436\u0438\u0437\u043D\u0438 \u0432\u0441\u0442\u0430\u0442\u044C
-    \u0441 \u0434\u0438\u0432\u0430\u043D\u0430. \u041D\u0430 \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u0435
-    \u044D\u0442\u043E\u0439 \u0438\u0433\u0440\u044B \u0443\u0448\u043B\u043E \u0434\u0432\u0435
-    \u0431\u0443\u0442\u044B\u043B\u043A\u0438 \u043F\u0438\u0432\u0430 \u0438 \u043F\u0430\u0447\u043A\u0430
-    \u0447\u0438\u043F\u0441\u043E\u0432."
-  - ' '
-  - ' '
-  - ' '
-  - ' '
-  - ' '
+  - "\u0411\u043E\u043B\u0438\u0434 \u0444\u043E\u0440\u043C\u0443\u043B\u044B 1
+    \u043D\u0430\u0441\u0442\u043E\u043B\u044C\u043A\u043E \u0431\u044B\u0441\u0442\u0440\u044B\u0439
+    \u0447\u0442\u043E \u0435\u043C\u0443 \u043D\u0435\u0442 \u0440\u0430\u0432\u043D\u044B\u0445 "
+  - "\u041F\u0430\u043D\u0446\u0438\u0440\u044C \u0447\u0435\u0440\u0435\u043F\u0430\u0445\u0438
+    \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u0435\u0439 \u0437\u0430\u0449\u0438\u0449\u0430\u0442\u044C
+    \u0441\u0435\u0431\u044F"
+  - "\u0420\u043E\u043C \u043D\u0430 \u043A\u043E\u0440\u0430\u0431\u043B\u044C \u043F\u043E\u0433\u0440\u0443\u0436\u0430\u044E\u0442
+    \u0432 \u0441\u0430\u043C\u044B\u0439 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0439
+    \u043C\u043E\u043C\u0435\u043D\u0442"
+  - "\u041E\u0434\u043D\u0430 \u0438\u0437 \u0441\u0430\u043C\u044B\u0445 \u043E\u043F\u0430\u0441\u043D\u044B\u0445
+    \u0442\u0440\u0430\u0441\u0441 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F
+    \u0432 \u0413\u0435\u0440\u043C\u0430\u043D\u0438\u0438"
+  - "\u041D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u043A \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E
+    \u0441\u0432\u0435\u0442\u0430 \u0432\u044B\u0437\u044B\u0432\u0430\u0435\u0442
+    \u043D\u0435\u043F\u0440\u0438\u044F\u0442\u043D\u044B\u0435 \u043E\u0449\u0443\u0449\u0435\u043D\u0438\u044F"
+  - "\u0421\u0430\u043C\u044B\u043C \u0443\u043C\u043D\u044B\u043C \u043C\u043B\u0435\u043A\u043E\u043F\u0438\u0442\u0430\u044E\u0449\u0438\u043C
+    \u043C\u043E\u0436\u043D\u043E \u043D\u0430\u0437\u0432\u0430\u0442\u044C \u0434\u0435\u043B\u044C\u0444\u0438\u043D\u0430"
 --- !u!1 &2099125298
 GameObject:
   m_ObjectHideFlags: 0

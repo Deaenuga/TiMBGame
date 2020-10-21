@@ -15,10 +15,14 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+        if(PlayerPrefs.GetInt("FirstStart")==0)
+        {
+            PlayerPrefs.SetInt("PlayerAccess", -1);
+            PlayerPrefs.SetInt("LocationNum", 0);
+            PlayerPrefs.SetInt("currLevel", 0);
+            PlayerPrefs.SetInt("FirstStart", 1);
+        }
         TextCoin(); 
-       // PlayerPrefs.SetInt("LocationNum", 0);
-        //PlayerPrefs.SetInt("currLevel", 6);
-
         if (Advertisement.isSupported)
         {
             Advertisement.Initialize("3860680", false);
