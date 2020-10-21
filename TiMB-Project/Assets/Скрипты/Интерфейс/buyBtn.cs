@@ -12,6 +12,7 @@ public class buyBtn : MonoBehaviour
     public bool isDown=false;
     public int index;
     public Button BuyButton;
+    public bool isDollar;
 
 
 

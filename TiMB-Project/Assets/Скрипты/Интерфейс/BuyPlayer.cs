@@ -9,6 +9,7 @@ public class BuyPlayer : MonoBehaviour
 {
     private int numPlayer;
     private buyBtn[] buys;
+    
 
 
     public void ChangePlayer()
@@ -40,7 +41,7 @@ public class BuyPlayer : MonoBehaviour
         {
             for (int i = 0; i < buys.Length; i++)
             {
-                if (buys[i].isDown)
+                if (buys[i].isDown && !buys[i].isDollar)
                 {
                     PlayerPrefs.SetInt("Player" + buys[i].index, 1);
                     PlayerPrefs.Save();
@@ -53,15 +54,42 @@ public class BuyPlayer : MonoBehaviour
             }
         }
 
+        if (HasEnoughDollar(price))
+        {
+            for (int i = 0; i < buys.Length; i++)
+            {
+                if (buys[i].isDown && buys[i].isDollar)
+                {
+                    PlayerPrefs.SetInt("Player" + buys[i].index, 1);
+                    PlayerPrefs.Save();
+                    UseDollar(price);
+                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;
+                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
+                    break;
+                }
+            }
+        }
     }
     public bool HasEnoughCoins(int amount) //если Было достаточно монет
     {
         return (PlayerPrefs.GetInt("Coins") >= amount);
     }
 
+    public bool HasEnoughDollar(int amount) //если Было достаточно монет
+    {
+        return (PlayerPrefs.GetInt("Dollar") >= amount);
+    }
+
     public void UseCoins(int amount) //Отнимание суммы
     {
         PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - amount);
+        GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
+        PlayerPrefs.Save();
+    }
+
+    public void UseDollar(int amount) //Отнимание суммы
+    {
+        PlayerPrefs.SetInt("Dollar", PlayerPrefs.GetInt("Dollar") - amount);
         GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
         PlayerPrefs.Save();
     }
