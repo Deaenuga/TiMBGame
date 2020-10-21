@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 8619338778009177163}
   - component: {fileID: 8619338777999598093}
   m_Layer: 0
-  m_Name: TT_demo_police
+  m_Name: "\u043C\u0435\u043D\u0442"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

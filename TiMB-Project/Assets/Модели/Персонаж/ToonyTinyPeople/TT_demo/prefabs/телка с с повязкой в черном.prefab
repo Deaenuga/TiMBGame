@@ -340,7 +340,8 @@ GameObject:
   - component: {fileID: 6252356961376966267}
   - component: {fileID: 6252356961367914557}
   m_Layer: 0
-  m_Name: TT_demo_female
+  m_Name: "\u0442\u0435\u043B\u043A\u0430 \u0441 \u0441 \u043F\u043E\u0432\u044F\u0437\u043A\u043E\u0439
+    \u0432 \u0447\u0435\u0440\u043D\u043E\u043C"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
