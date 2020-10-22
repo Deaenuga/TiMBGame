@@ -13,6 +13,7 @@ public class buyBtn : MonoBehaviour
     public int index;
     public Button BuyButton;
     public bool isDollar;
+    public bool isAccessorie;
 
 
 

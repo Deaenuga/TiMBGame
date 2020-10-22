@@ -31,6 +31,11 @@ public class BuyPlayer : MonoBehaviour
             {
                 item.GetComponent<Button>().interactable = false;
             }
+
+            if (PlayerPrefs.GetInt("PlayerAccess" + item.index) == 1)
+            {
+                item.GetComponent<Button>().interactable = false;
+            }
         }
     }
 
@@ -69,6 +74,24 @@ public class BuyPlayer : MonoBehaviour
                 }
             }
         }
+
+        if (HasEnoughDollar(price))
+        {
+            for (int i = 0; i < buys.Length; i++)
+            {
+                if (buys[i].isDown && buys[i].isAccessorie)
+                {
+                    PlayerPrefs.SetInt("PlayerAccess" + buys[i].index, 1);
+                    PlayerPrefs.Save();
+                    UseDollar(price);
+                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;
+                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
+                    break;
+                }
+            }
+        }
+
+
     }
     public bool HasEnoughCoins(int amount) //если Было достаточно монет
     {

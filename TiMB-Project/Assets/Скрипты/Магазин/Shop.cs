@@ -9,6 +9,7 @@ public class Shop : MonoBehaviour
     {
         PlayerPrefs.SetInt("Coins", 15000);
         PlayerPrefs.SetInt("Dollar", 15000);
+        //PlayerPrefs.Save();
         //PlayerPrefs.DeleteAll();
         // PlayerPrefs.SetInt("Player0", 0);
         // PlayerPrefs.SetInt("Player1", 0);
