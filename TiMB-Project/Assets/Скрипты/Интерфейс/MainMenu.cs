@@ -36,7 +36,7 @@ public class MainMenu : MonoBehaviour
     public void TextCoin()
     {
         textCoin.text = PlayerPrefs.GetInt("Coins").ToString();
-        textDollar.text = PlayerPrefs.GetInt("Dollars").ToString();
+        textDollar.text = PlayerPrefs.GetInt("Dollar").ToString();
     }
 
     public void QuitGame() //Метод отвечащий за выход из игры (расположен в объекте MainMenu)
