@@ -12,14 +12,16 @@ public class MainMenu : MonoBehaviour
 
     public Text textCoin;
     public Text textDollar;
+    public Text currlevel;
 
     void Start()
     {
-        if(PlayerPrefs.GetInt("FirstStart")==0)
+        if (PlayerPrefs.GetInt("FirstStart")==0)
         {
             PlayerPrefs.SetInt("PlayerAccess", -1);
             PlayerPrefs.SetInt("LocationNum", 0);
             PlayerPrefs.SetInt("currLevel", 0);
+            PlayerPrefs.SetInt("levelNum", 1);
             PlayerPrefs.SetInt("FirstStart", 1);
         }
         TextCoin(); 
@@ -27,6 +29,7 @@ public class MainMenu : MonoBehaviour
         {
             Advertisement.Initialize("3860680", false);
         }
+        currlevel.text += " " + PlayerPrefs.GetInt("levelNum").ToString();
     }
 
     private void Update()
