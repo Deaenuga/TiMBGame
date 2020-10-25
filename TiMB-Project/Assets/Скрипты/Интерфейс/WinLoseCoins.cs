@@ -33,7 +33,7 @@ public class WinLoseCoins : MonoBehaviour //Класс для вывода за�
             {
                 coins.text = "Заработано:" + PlayerPrefs.GetInt("currCoins").ToString();
                 //Заработанные монеты в конце уровня
-                PlayerPrefs.SetInt("Dollars", PlayerPrefs.GetInt("Dollars") + PlayerPrefs.GetInt("currCoins"));
+                PlayerPrefs.SetInt("Dollar", PlayerPrefs.GetInt("Dollar") + PlayerPrefs.GetInt("currCoins"));
                 PlayerPrefs.Save();
             }
             else
@@ -63,7 +63,7 @@ public class WinLoseCoins : MonoBehaviour //Класс для вывода за�
         }
         if (PlayerPrefs.GetInt("LocationNum") > 0 && PlayerPrefs.GetInt("currLevel") == 1)
         {
-            PlayerPrefs.SetInt("Dollars", PlayerPrefs.GetInt("Dollars") + (PlayerPrefs.GetInt("currCoins")));         //Полученные доллары на уровне увеличиваем в два раза
+            PlayerPrefs.SetInt("Dollar", PlayerPrefs.GetInt("Dollar") + (PlayerPrefs.GetInt("currCoins")));         //Полученные доллары на уровне увеличиваем в два раза
         }
         else
         {

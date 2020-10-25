@@ -16,6 +16,6 @@ public class CoinsText : MonoBehaviour
     public void UpdateAllCoinsUIText()
     {
             allCoinsUIText.text = PlayerPrefs.GetInt("Coins").ToString();
-        allDollarsUIText.text = PlayerPrefs.GetInt("Dollar").ToString();
+            allDollarsUIText.text = PlayerPrefs.GetInt("Dollar").ToString();
     }
 }

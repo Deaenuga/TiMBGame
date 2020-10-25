@@ -13,7 +13,12 @@ public class NextLvl : MonoBehaviour
     }
 
 // Start is called before the first frame update
-public void Play()
+    public void Play()
+    {
+        Invoke("PlayInvoke", 0.5f);
+    }
+
+    void PlayInvoke()
     {
         int GameNum = PlayerPrefs.GetInt("LocationNum");
         int currLevel = PlayerPrefs.GetInt("currLevel");
@@ -72,11 +77,9 @@ public void Play()
                         SceneManager.LoadScene("Menu");
                         break;
                     }
-                    
+
             }
     }
-
-
 
     public void Menu()
     {

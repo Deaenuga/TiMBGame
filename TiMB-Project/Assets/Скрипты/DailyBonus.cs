@@ -8,10 +8,11 @@ public class DailyBonus : MonoBehaviour
 {
 
     public GameObject[] daysPanel;
+    
     public Text[] daysReward;
 
-    public Canvas mainCanvas;
-    public Canvas dailyCanvas;
+    public GameObject mainCanvas;
+    public GameObject dailyCanvas;
 
     public Button claimButton;
 
@@ -21,6 +22,9 @@ public class DailyBonus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /////////////////////////////////////////////
+        PlayerPrefs.DeleteAll();
+        /////////////////////////////////////////////
         DateTime RewardedDT = new DateTime(PlayerPrefs.GetInt("RewardedYear", DateTime.Now.Year), PlayerPrefs.GetInt("RewardedMonth", DateTime.Now.Month), PlayerPrefs.GetInt("RewardedDay", DateTime.Now.Day),
                                            PlayerPrefs.GetInt("RewardedHour", DateTime.Now.Hour), PlayerPrefs.GetInt("RewardedMinute", DateTime.Now.Minute), PlayerPrefs.GetInt("RewardedSecond", DateTime.Now.Second));
         if (RewardedDT <= DateTime.Now && (DateTime.Now - RewardedDT).Days == 0)
@@ -51,31 +55,33 @@ public class DailyBonus : MonoBehaviour
         PlayerPrefs.SetInt("RewardedHour", RewardedDT.Hour);
         PlayerPrefs.SetInt("RewardedMinute", RewardedDT.Minute);
         PlayerPrefs.SetInt("RewardedSecond", RewardedDT.Second);
-        daysPanel[currDay].GetComponent<Image>().color = Color.red;
-        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysReward[currDay].text));
+        daysPanel[currDay].GetComponent<Image>().color = Color.red; //собрали ежедневный бонус
+        //PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysReward[currDay].text));
         PlayerPrefs.SetInt("currDay", currDay + 1);
         claimed = true;
         claimButton.enabled = false;
     }
 
-    public void closeDailyBonusPage()
+    public void closeDailyBonusPage() //По нажатию на значок выхода
     {
         if(!claimed)
         PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysReward[currDay].text));
-        mainCanvas.gameObject.SetActive(true);
-        dailyCanvas.gameObject.SetActive(false);
+        mainCanvas.SetActive(true);
+        dailyCanvas.SetActive(false);
     }
     private void panelsCreate()
     {
         currDay = PlayerPrefs.GetInt("currDay");
         for (int i = 0; i < daysPanel.Length; i++)
         {
-            daysPanel[i].GetComponent<Image>().color = Color.green;
+            //daysPanel[i].GetComponent<Image>().color = Color.green; //Все остальные
+            daysPanel[i].GetComponent<Image>().color = Color.gray;//Все остальные
+            daysPanel[i].GetComponent<Image>().GetComponentInChildren<Image>().color = Color.green;
         }
         for (int i = 0; i < currDay; i++)
         {
-            daysPanel[i].GetComponent<Image>().color = Color.red;
+            daysPanel[i].GetComponent<Image>().color = Color.red; //Собранные
         }
-        daysPanel[currDay].GetComponent<Image>().color = Color.yellow;
+        daysPanel[currDay].GetComponent<Image>().color = Color.yellow; //Желтый текущий день
     }
 }

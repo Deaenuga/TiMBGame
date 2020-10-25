@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     public Text textCoin;
     public Text textDollar;
     public Text currlevel;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class MainMenu : MonoBehaviour
             Advertisement.Initialize("3860680", false);
         }
         currlevel.text += " " + PlayerPrefs.GetInt("levelNum").ToString();
+        
     }
 
     private void Update()
@@ -45,14 +47,28 @@ public class MainMenu : MonoBehaviour
     public void QuitGame() //Метод отвечащий за выход из игры (расположен в объекте MainMenu)
     {
         Debug.Log("Выход из игры");
+        Invoke("Quit", 0.5f);
+        
+    }
+
+    void Quit()
+    {
         Application.Quit();
     }
 
+
+
     public void GoToShop() //Метод отвечающий за переход со сцены Menu на сцену Shop
     {
-        SceneManager.LoadScene("Shop");
-
+        Invoke("LoadNewScene", 0.5f);
     }
+
+    void LoadNewScene()
+    {
+        SceneManager.LoadScene("Shop");
+    }
+
+
 
     public void GoToPerson()
     {

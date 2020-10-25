@@ -26,12 +26,23 @@ public class PauseMenu : MonoBehaviour
     public void GoToMenu() //Метод отвечающий за переход со сцены Shop на сцену Menu
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
+        Invoke("GoToMenuInvoke", 0.5f);
+    }
 
+    void GoToMenuInvoke()
+    {
+        SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame()
     {
+        Invoke("QuitGameInvoke", 0.5f);
+        
+    }
+
+    void QuitGameInvoke()
+    {
+        Debug.Log("Выходим из игры");
         Application.Quit();
     }
 }
