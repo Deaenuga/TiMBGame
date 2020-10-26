@@ -47,9 +47,7 @@ public class buyBtn : MonoBehaviour
                     {
                         this.GetComponent<Image>().color = Color.yellow;
                         modelSkin.SetActive(true);
-
-                    }
-                   
+                    }                  
                 }
                 
 

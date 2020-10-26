@@ -8,34 +8,35 @@ public class DailyBonus : MonoBehaviour
 {
 
     public GameObject[] daysPanel;
-    
-    public Text[] daysReward;
 
     public GameObject mainCanvas;
     public GameObject dailyCanvas;
 
     public Button claimButton;
 
-    private int currDay;
+    private int currDay = 0;
     private bool claimed = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        ///////////////////////////////////
+        //PlayerPrefs.DeleteAll();
+
         /////////////////////////////////////////////
-        PlayerPrefs.DeleteAll();
-        /////////////////////////////////////////////
+        
         DateTime RewardedDT = new DateTime(PlayerPrefs.GetInt("RewardedYear", DateTime.Now.Year), PlayerPrefs.GetInt("RewardedMonth", DateTime.Now.Month), PlayerPrefs.GetInt("RewardedDay", DateTime.Now.Day),
                                            PlayerPrefs.GetInt("RewardedHour", DateTime.Now.Hour), PlayerPrefs.GetInt("RewardedMinute", DateTime.Now.Minute), PlayerPrefs.GetInt("RewardedSecond", DateTime.Now.Second));
+        panelsCreate();
+        currDay = PlayerPrefs.GetInt("currDay");
         if (RewardedDT <= DateTime.Now && (DateTime.Now - RewardedDT).Days == 0)
         {
-            //PlayerPrefs.SetInt("currDay", 0);
             panelsCreate();
         }
         else
         if (RewardedDT < DateTime.Now && (DateTime.Now - RewardedDT).Days < 0)
         {
-            PlayerPrefs.SetInt("currDay", 0);
+           
             panelsCreate();
         }
         else
@@ -43,7 +44,6 @@ public class DailyBonus : MonoBehaviour
             mainCanvas.gameObject.SetActive(true);
             dailyCanvas.gameObject.SetActive(false);
         }
-
     }
 
     public void claimReward() 
@@ -56,8 +56,16 @@ public class DailyBonus : MonoBehaviour
         PlayerPrefs.SetInt("RewardedMinute", RewardedDT.Minute);
         PlayerPrefs.SetInt("RewardedSecond", RewardedDT.Second);
         daysPanel[currDay].GetComponent<Image>().color = Color.red; //собрали ежедневный бонус
-        //PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysReward[currDay].text));
+        if (currDay != 4)
+        {
+            if (!daysPanel[currDay].GetComponent<DailyBonusCount>().dolar)
+                PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + daysPanel[currDay].GetComponent<DailyBonusCount>().value);
+            else PlayerPrefs.SetInt("Dollar", PlayerPrefs.GetInt("Dollar") + daysPanel[currDay].GetComponent<DailyBonusCount>().value);
+        }
+        else PlayerPrefs.SetInt("Player4", 1);
+        if(currDay+1<=4)
         PlayerPrefs.SetInt("currDay", currDay + 1);
+        else PlayerPrefs.SetInt("currDay", 0);
         claimed = true;
         claimButton.enabled = false;
     }
@@ -65,7 +73,7 @@ public class DailyBonus : MonoBehaviour
     public void closeDailyBonusPage() //По нажатию на значок выхода
     {
         if(!claimed)
-        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + Convert.ToInt32(daysReward[currDay].text));
+        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + daysPanel[currDay].GetComponent<DailyBonusCount>().value);
         mainCanvas.SetActive(true);
         dailyCanvas.SetActive(false);
     }
@@ -74,9 +82,7 @@ public class DailyBonus : MonoBehaviour
         currDay = PlayerPrefs.GetInt("currDay");
         for (int i = 0; i < daysPanel.Length; i++)
         {
-            //daysPanel[i].GetComponent<Image>().color = Color.green; //Все остальные
-            daysPanel[i].GetComponent<Image>().color = Color.gray;//Все остальные
-            daysPanel[i].GetComponent<Image>().GetComponentInChildren<Image>().color = Color.green;
+            daysPanel[i].GetComponent<Image>().color = Color.grey;//Все остальные
         }
         for (int i = 0; i < currDay; i++)
         {

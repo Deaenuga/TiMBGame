@@ -7,8 +7,8 @@ public class Shop : MonoBehaviour
 {
     void Start()
     {
-        PlayerPrefs.SetInt("Coins", 15000);
-        PlayerPrefs.SetInt("Dollar", 15000);
+        //PlayerPrefs.SetInt("Coins", 15000);
+        //PlayerPrefs.SetInt("Dollar", 15000);
         //PlayerPrefs.Save();
         //PlayerPrefs.DeleteAll();
         // PlayerPrefs.SetInt("Player0", 0);

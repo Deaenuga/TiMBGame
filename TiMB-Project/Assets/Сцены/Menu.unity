@@ -1841,6 +1841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 578331275}
   - component: {fileID: 578331276}
+  - component: {fileID: 578331277}
   m_Layer: 5
   m_Name: Bonus
   m_TagString: Untagged
@@ -1893,6 +1894,27 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 80}
   m_Constraint: 2
   m_ConstraintCount: 2
+--- !u!114 &578331277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578331274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698418adcfe2c094984e29c6bf1eacef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  daysPanel:
+  - {fileID: 1001946196}
+  - {fileID: 1001782499}
+  - {fileID: 879509586}
+  - {fileID: 824802712}
+  - {fileID: 685483939}
+  mainCanvas: {fileID: 1759858187}
+  dailyCanvas: {fileID: 1155612972}
+  claimButton: {fileID: 936492877}
 --- !u!114 &639321230 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 193916620607751029, guid: 6d6a67db35ff9bd4da23457ac31ba1e2, type: 3}
@@ -2164,7 +2186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 311.4702, y: -740}
+  m_AnchoredPosition: {x: 407.62888, y: -740}
   m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685483941
@@ -2288,7 +2310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 311.4702, y: -260}
+  m_AnchoredPosition: {x: 407.62888, y: -260}
   m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706808042
@@ -2800,6 +2822,7 @@ GameObject:
   - component: {fileID: 824802716}
   - component: {fileID: 824802715}
   - component: {fileID: 824802714}
+  - component: {fileID: 824802718}
   m_Layer: 5
   m_Name: BonusDays 4
   m_TagString: Untagged
@@ -2906,6 +2929,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824802712}
   m_CullTransparentMesh: 0
+--- !u!114 &824802718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824802712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80aced55aaccf54da3350b58059924b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 30
+  dolar: 1
 --- !u!1 &879509586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,6 +2956,7 @@ GameObject:
   - component: {fileID: 879509590}
   - component: {fileID: 879509589}
   - component: {fileID: 879509588}
+  - component: {fileID: 879509592}
   m_Layer: 5
   m_Name: BonusDays 3
   m_TagString: Untagged
@@ -3025,6 +3063,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879509586}
   m_CullTransparentMesh: 0
+--- !u!114 &879509592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879509586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80aced55aaccf54da3350b58059924b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 3
+  dolar: 1
 --- !u!1 &896714623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,7 +3248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: x 300
+  m_Text: 300
 --- !u!222 &900066459
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3643,6 +3695,7 @@ GameObject:
   - component: {fileID: 1001782503}
   - component: {fileID: 1001782502}
   - component: {fileID: 1001782501}
+  - component: {fileID: 1001782505}
   m_Layer: 5
   m_Name: BonusDays 2
   m_TagString: Untagged
@@ -3749,6 +3802,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001782499}
   m_CullTransparentMesh: 0
+--- !u!114 &1001782505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001782499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80aced55aaccf54da3350b58059924b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 300
+  dolar: 0
 --- !u!1 &1001946196
 GameObject:
   m_ObjectHideFlags: 0
@@ -3762,6 +3829,7 @@ GameObject:
   - component: {fileID: 1001946198}
   - component: {fileID: 1001946201}
   - component: {fileID: 1001946200}
+  - component: {fileID: 1001946202}
   m_Layer: 5
   m_Name: BonusDays 1
   m_TagString: Untagged
@@ -3868,6 +3936,20 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 5}
   m_Constraint: 2
   m_ConstraintCount: 3
+--- !u!114 &1001946202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001946196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80aced55aaccf54da3350b58059924b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 100
+  dolar: 0
 --- !u!1 &1007629341
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,6 +4057,7 @@ RectTransform:
   - {fileID: 766264684}
   - {fileID: 408962596}
   - {fileID: 1990728903}
+  - {fileID: 1829225856}
   m_Father: {fileID: 1759858191}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4691,7 +4774,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: x 3
+  m_Text: '3
+
+'
 --- !u!222 &1272692719
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5148,7 +5233,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: x 100
+  m_Text: 100
 --- !u!222 &1297193440
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5835,7 +5920,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: x 30
+  m_Text: 30
 --- !u!222 &1579552603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6081,7 +6166,6 @@ RectTransform:
   - {fileID: 2130377373}
   - {fileID: 1224379291}
   - {fileID: 703576507}
-  - {fileID: 1829225856}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6115,13 +6199,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829225855}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2021621291}
-  m_Father: {fileID: 1759858191}
-  m_RootOrder: 6
+  m_Father: {fileID: 1091629671}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6624,27 +6708,6 @@ MonoBehaviour:
   - {fileID: 879509586}
   - {fileID: 824802712}
   - {fileID: 685483939}
-  daysReward:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   mainCanvas: {fileID: 1759858187}
   dailyCanvas: {fileID: 1155612972}
   claimButton: {fileID: 936492877}
@@ -6911,7 +6974,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021621290}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38a1c8a755ebe1841816e3a5b3aca1ce, type: 3}
   m_Name: 
@@ -7366,7 +7429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2133515653809069888, guid: 0958389201c6fae4cba00e69cdba0484, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0958389201c6fae4cba00e69cdba0484, type: 3}
