@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class swipe_shop : MonoBehaviour
 {
     public GameObject scrollbar;
-    public Image[] circle;
+    //public Image[] circle;
     private float scroll_pos = 0;
     float[] pos;
-    int k = 0;
+    
 
     // Update is called once per frame
     void Update()
@@ -31,7 +31,7 @@ public class swipe_shop : MonoBehaviour
             {
                 if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
                 {
-                    scrollbar.GetComponent<Scrollbar>().value = Mathf.Lerp(scrollbar.GetComponent<Scrollbar>().value, pos[i], 0.1f);
+                    //scrollbar.GetComponent<Scrollbar>().value = Mathf.Lerp(scrollbar.GetComponent<Scrollbar>().value, pos[i], 0.1f);
                 }
             }
         }
@@ -40,21 +40,17 @@ public class swipe_shop : MonoBehaviour
         { 
             if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
             {
-                circle[i].color = Color.black;
-                transform.GetChild(i).localScale = Vector2.Lerp(transform.GetChild(i).localScale, new Vector2(1f, 1f), 0.1f);
+                
+                //transform.GetChild(i).localScale = Vector2.Lerp(transform.GetChild(i).localScale, new Vector2(1f, 1f), 0.1f);
                 for (int j = 0; j < pos.Length; j++)
                 {
                     if (j != i)
                     {
-                        transform.GetChild(j).localScale = Vector2.Lerp(transform.GetChild(j).localScale, new Vector2(0.8f, 0.8f), 0.1f);
+                        //transform.GetChild(j).localScale = Vector2.Lerp(transform.GetChild(j).localScale, new Vector2(0.8f, 0.8f), 0.1f);
                     }
                 }
             }
-            else
-            {
-                k = i;
-                circle[k].color = Color.white;
-            }
+            
         }
     }
 }

@@ -616,7 +616,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339393732}
-  m_LocalRotation: {x: 0.1802911, y: 0.7437431, z: -0.22191954, w: 0.6042293}
+  m_LocalRotation: {x: 0.18029109, y: 0.7437432, z: -0.22191954, w: 0.6042292}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1496,7 +1496,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.1802911, y: 0.74374306, z: -0.2219195, w: 0.60422933}
+  m_LocalRotation: {x: 0.18029107, y: 0.7437432, z: -0.22191954, w: 0.6042292}
   m_LocalPosition: {x: -10.54841, y: 5.661851, z: 0.09593105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2222,7 +2222,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293016491}
-  m_LocalRotation: {x: 0.18899669, y: 0.7404283, z: -0.23260456, w: 0.6016156}
+  m_LocalRotation: {x: 0.18899669, y: 0.7404283, z: -0.23260455, w: 0.6016156}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3595,6 +3595,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2075416887235895636, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: m_Name
+      value: "\u0447\u0435\u043B \u0432 \u043F\u043E\u043B\u043E\u0441\u0430\u0442\u043E\u0439
+        \u043C\u0430\u0439\u043A\u0435"
+      objectReference: {fileID: 0}
     - target: {fileID: 2075416887303341191, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
@@ -3651,9 +3656,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u043C\u043E\u043D\u0430\u0448\u043A\u0430"
       objectReference: {fileID: 0}
+    - target: {fileID: 2075416887722165763, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075416887722165763, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: m_Name
+      value: "\u0442\u0435\u043B\u043A\u0430 \u0441 \u043A\u043E\u0440\u043E\u0442\u043A\u043E\u0439
+        \u0441\u0442\u0440\u0438\u0436\u043A\u043E\u0439"
+      objectReference: {fileID: 0}
     - target: {fileID: 2075416887978209656, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075416887978209656, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: m_Name
+      value: "\u0442\u0435\u043B\u043A\u0430 \u0441 \u043F\u043E\u0432\u044F\u0437\u043A\u043E\u0439"
       objectReference: {fileID: 0}
     - target: {fileID: 2075416888210741558, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
@@ -3760,6 +3778,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8325165167283375632, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: m_Name
+      value: "$ \u0442\u0435\u043B\u043A\u0430 \u0432 \u0441\u0438\u043D\u0435\u0439
+        \u043C\u0430\u0439\u043A\u0435"
+      objectReference: {fileID: 0}
     - target: {fileID: 8353900947181793804, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3768,6 +3791,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: "$ \u043F\u0430\u043D\u043A \u0441 \u0436\u0435\u043B\u0442\u044B\u043C\u0438
         \u0432\u043E\u043B\u043E\u0441\u0430\u043C\u0438"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866077005344028737, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866077005344028737, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
+      propertyPath: m_Name
+      value: "\u0447\u0435\u043B \u0432 \u043A\u0435\u043F\u043A\u0435"
       objectReference: {fileID: 0}
     - target: {fileID: 9079223892136859630, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
