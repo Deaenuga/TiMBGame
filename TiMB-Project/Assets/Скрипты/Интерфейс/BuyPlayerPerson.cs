@@ -26,7 +26,7 @@ public class BuyPlayerPerson : MonoBehaviour
             {
                 item.GetComponent<Button>().onClick.RemoveAllListeners();
                 Destroy(item.gameObject);
-                print(item.GetComponent<Button>().IsDestroyed());
+                //print(item.GetComponent<Button>().IsDestroyed());
             }
             //if (PlayerPrefs.GetInt("Player" + item.index) == 0)
             //{

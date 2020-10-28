@@ -73,7 +73,7 @@ public class SnapScrolling : MonoBehaviour
             instPans[i].transform.localScale = panScale[i];
         }
         float scrollVelocity = Mathf.Abs(scrollRect.velocity.x);
-        Debug.Log(scrollVelocity);
+        //Debug.Log(scrollVelocity);
         if (scrollVelocity < 400 && !isScrolling) scrollRect.inertia = false;
         if (isScrolling || scrollVelocity > 400) return;
 

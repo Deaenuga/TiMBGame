@@ -35,7 +35,7 @@ public class buyBtnPerson : MonoBehaviour
             if (buttons[i].index != index) //Если кнопка не выбрана
             {
                 //modelSkin.SetActive(false);
-                Debug.Log(index);
+                //Debug.Log(index);
                 buttons[i].GetComponent<Image>().color = Color.white;
                 buttons[i].modelSkin.SetActive(false);
 
@@ -49,7 +49,7 @@ public class buyBtnPerson : MonoBehaviour
                     {
                         this.GetComponent<Image>().color = Color.green;
                         modelSkin.SetActive(true);
-                        Debug.Log("моделька");
+                        //Debug.Log("моделька");
 
                     }
 

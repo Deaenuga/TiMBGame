@@ -15,3 +15,4 @@ MENUTEXT=Меню
 RESUMETEXT=Продолжить
 QUITTEXT=Выход
 SHOPTEXT=Магазин
+PERSONTEXT=Персонаж

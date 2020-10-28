@@ -46,7 +46,7 @@ public class BuyPlayer : MonoBehaviour
         {
             for (int i = 0; i < buys.Length; i++)
             {
-                if (buys[i].isDown && !buys[i].isDollar)
+                if (buys[i].isDown && !buys[i].isDollar && !buys[i].isAccessorie)
                 {
                     PlayerPrefs.SetInt("Player" + buys[i].index, 1);
                     PlayerPrefs.Save();
