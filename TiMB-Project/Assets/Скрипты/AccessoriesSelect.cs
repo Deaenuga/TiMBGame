@@ -6,7 +6,7 @@ public class AccessoriesSelect : MonoBehaviour
 {
     public GameObject[] accessories;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
         int curraccess = PlayerPrefs.GetInt("PlayerAccess");
         for (int i = 0; i < accessories.Length; i++)

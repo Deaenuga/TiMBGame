@@ -2975,7 +2975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &149564239
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2991,9 +2991,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1360, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149564240
@@ -3005,11 +3005,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 149564238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 6
-  modelSkin: {fileID: 0}
+  index: 25
   isDown: 0
 --- !u!114 &149564241
 MonoBehaviour:
@@ -3054,8 +3053,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+      - m_Target: {fileID: 149564240}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
         m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
@@ -5037,7 +5036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &244070392
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5053,9 +5052,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2080, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244070393
@@ -5067,11 +5066,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 244070391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 9
-  modelSkin: {fileID: 0}
+  index: 5
   isDown: 0
 --- !u!114 &244070394
 MonoBehaviour:
@@ -5116,8 +5114,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+      - m_Target: {fileID: 244070393}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
         m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
@@ -8210,7 +8208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &361317745
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8226,9 +8224,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361317746
@@ -8240,11 +8238,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 361317744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 2
-  modelSkin: {fileID: 0}
+  index: 1
   isDown: 0
 --- !u!114 &361317747
 MonoBehaviour:
@@ -8289,8 +8286,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+      - m_Target: {fileID: 361317746}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
         m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
@@ -9621,7 +9618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &438887023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9637,9 +9634,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1600, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &438887024
@@ -9651,11 +9648,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 438887022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 7
-  modelSkin: {fileID: 0}
+  index: 24
   isDown: 0
 --- !u!114 &438887025
 MonoBehaviour:
@@ -9700,8 +9696,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+      - m_Target: {fileID: 438887024}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
         m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
@@ -13313,7 +13309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &597998385
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13329,9 +13325,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1120, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &597998386
@@ -13343,11 +13339,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 597998384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 5
-  modelSkin: {fileID: 0}
+  index: 6
   isDown: 0
 --- !u!114 &597998387
 MonoBehaviour:
@@ -13392,8 +13387,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+      - m_Target: {fileID: 597998386}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
         m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
@@ -23621,7 +23616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1057116787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23637,9 +23632,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 640, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1057116788
@@ -23651,11 +23646,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1057116786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 3
-  modelSkin: {fileID: 0}
+  index: 0
   isDown: 0
 --- !u!114 &1057116789
 MonoBehaviour:
@@ -23700,8 +23694,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+      - m_Target: {fileID: 1057116788}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
         m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
@@ -23769,7 +23763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1061060537
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23785,9 +23779,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0.358, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1061060538
@@ -23799,11 +23793,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1061060536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 1
-  modelSkin: {fileID: 0}
+  index: 3
   isDown: 0
 --- !u!114 &1061060540
 MonoBehaviour:
@@ -23848,9 +23841,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1061060536}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1061060538}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
+        m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31154,7 +31147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1438719718
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31170,9 +31163,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 880, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1438719719
@@ -31184,11 +31177,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1438719717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   index: 4
-  modelSkin: {fileID: 0}
   isDown: 0
 --- !u!114 &1438719720
 MonoBehaviour:
@@ -31233,8 +31225,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+      - m_Target: {fileID: 1438719719}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
         m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:
@@ -38712,7 +38704,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1744417202
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38728,9 +38720,9 @@ RectTransform:
   m_Father: {fileID: 945578870}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1840, y: -119.57591}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1744417203
@@ -38742,11 +38734,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1744417201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a6171c2e8bec345aed9ad6ae6843a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f306a8a6a87b0345a19e9c7022d6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 8
-  modelSkin: {fileID: 0}
+  index: 2
   isDown: 0
 --- !u!114 &1744417204
 MonoBehaviour:
@@ -38791,8 +38782,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buyBtn, Assembly-CSharp
+      - m_Target: {fileID: 1744417203}
+        m_TargetAssemblyTypeName: SelectAccessoryPerson, Assembly-CSharp
         m_MethodName: Pressed
         m_Mode: 1
         m_Arguments:

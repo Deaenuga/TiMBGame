@@ -11,13 +11,18 @@ public class buyBtnPerson : MonoBehaviour
     public GameObject modelSkin;
     [HideInInspector]
     public bool isDown = false;
-    
-    //public Button BuyButton;
+
+    private buyBtnPerson[] buttons;
+
+    private void Start()
+    {
+        buttons = FindObjectsOfType<buyBtnPerson>();
+        if (index == PlayerPrefs.GetInt("currSkin"))
+            SetActive();
+    }
 
     public void Pressed()
     {
-
-        buyBtnPerson[] buttons = FindObjectsOfType<buyBtnPerson>();
         foreach (var item in buttons)
         {
             item.isDown = false;
@@ -27,7 +32,11 @@ public class buyBtnPerson : MonoBehaviour
         PlayerPrefs.SetInt("currSkin", index); //При нажатии запоминает какой скин
         PlayerPrefs.Save();
 
-
+        SetActive();
+        
+    }
+    void SetActive()
+    {
         for (int i = 0; i < buttons.Length; i++)
         {
 
