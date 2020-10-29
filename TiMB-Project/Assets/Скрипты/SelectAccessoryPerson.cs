@@ -14,8 +14,31 @@ public class SelectAccessoryPerson : MonoBehaviour
     void Start()
     {
         buttons = FindObjectsOfType<SelectAccessoryPerson>();
-        if (index == PlayerPrefs.GetInt("PlayerAccess"))
-            SetActive();
+
+        foreach (var item in buttons)
+        {
+            if (PlayerPrefs.GetInt("PlayerAccess" + item.index) == 1)
+            {
+                item.GetComponent<Button>().interactable = true;
+                Debug.Log(" куплен "+item.index);
+            }
+
+            if (PlayerPrefs.GetInt("PlayerAccess" + item.index) == 0)
+            {
+                //Debug.Log(" не куплен " + item.index);
+                item.GetComponent<Button>().onClick.RemoveAllListeners();
+                Destroy(item.gameObject);
+                
+            }
+        }
+
+
+
+
+        //if (index == PlayerPrefs.GetInt("PlayerAccess"))
+        //    SetActive();
+
+
     }
 
     public void Pressed()
@@ -26,7 +49,7 @@ public class SelectAccessoryPerson : MonoBehaviour
         }
         isDown = true;
 
-        PlayerPrefs.SetInt("PlayerAccess", index); //При нажатии запоминает какой скин
+        PlayerPrefs.SetInt("PlayerAccess", index); //При нажатии запоминает какой акксесуар
         PlayerPrefs.Save();
 
         SetActive();

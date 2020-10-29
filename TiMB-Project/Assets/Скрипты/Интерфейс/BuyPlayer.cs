@@ -49,6 +49,7 @@ public class BuyPlayer : MonoBehaviour
                 if (buys[i].isDown && !buys[i].isDollar && !buys[i].isAccessorie)
                 {
                     PlayerPrefs.SetInt("Player" + buys[i].index, 1);
+                    Debug.Log("за монеты");
                     PlayerPrefs.Save();
                     UseCoins(price);
                     //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;
@@ -66,6 +67,7 @@ public class BuyPlayer : MonoBehaviour
                 if (buys[i].isDown && buys[i].isDollar)
                 {
                     PlayerPrefs.SetInt("Player" + buys[i].index, 1);
+                    Debug.Log("за доллары");
                     PlayerPrefs.Save();
                     UseDollar(price);
                     //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;
@@ -82,6 +84,7 @@ public class BuyPlayer : MonoBehaviour
                 if (buys[i].isDown && buys[i].isAccessorie)
                 {
                     PlayerPrefs.SetInt("PlayerAccess" + buys[i].index, 1);
+                    Debug.Log("акксесуар");
                     PlayerPrefs.Save();
                     UseDollar(price);
                     //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;

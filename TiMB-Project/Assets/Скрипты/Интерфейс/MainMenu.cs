@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 using UnityEngine.Advertisements;
 
 
@@ -14,9 +15,14 @@ public class MainMenu : MonoBehaviour
     public Text textDollar;
     public Text currlevel;
     public AudioSource audioSource;
+    public AudioMixer volMixer;
 
     void Start()
     {
+        //PlayerPrefs.SetInt("Coins", 100000);
+        //PlayerPrefs.SetInt("Dollar", 100000);
+        //PlayerPrefs.DeleteAll();
+
         if (PlayerPrefs.GetInt("FirstStart")==0)
         {
             PlayerPrefs.SetInt("PlayerAccess", -1);
@@ -31,7 +37,9 @@ public class MainMenu : MonoBehaviour
             Advertisement.Initialize("3860680", false);
         }
         currlevel.text += " " + PlayerPrefs.GetInt("levelNum").ToString();
-        
+
+        volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
+
     }
 
     private void Update()
@@ -72,10 +80,10 @@ public class MainMenu : MonoBehaviour
 
     public void GoToPerson()
     {
-        if (Advertisement.IsReady())
-        {
-            Advertisement.Show("video"); //Вид рекламы который можно пропустить
-        }
+        //if (Advertisement.IsReady())
+        //{
+        //    Advertisement.Show("video"); //Вид рекламы который можно пропустить
+        //}
         SceneManager.LoadScene("Person");
     }
 

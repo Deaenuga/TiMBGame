@@ -707,7 +707,7 @@ MonoBehaviour:
   Price: 100
   modelSkin: {fileID: 1697798706}
   isDown: 0
-  index: 1
+  index: 3
   BuyButton: {fileID: 2136266682}
   isDollar: 0
   isAccessorie: 1
@@ -2985,7 +2985,7 @@ MonoBehaviour:
   Price: 300
   modelSkin: {fileID: 1836656844}
   isDown: 0
-  index: 3
+  index: 0
   BuyButton: {fileID: 2136266682}
   isDollar: 0
   isAccessorie: 1
@@ -3778,7 +3778,7 @@ MonoBehaviour:
   Price: 200
   modelSkin: {fileID: 972900178}
   isDown: 0
-  index: 2
+  index: 1
   BuyButton: {fileID: 2136266682}
   isDollar: 0
   isAccessorie: 1
@@ -5060,7 +5060,7 @@ MonoBehaviour:
   Price: 700
   modelSkin: {fileID: 1048368797}
   isDown: 0
-  index: 7
+  index: 24
   BuyButton: {fileID: 2136266682}
   isDollar: 0
   isAccessorie: 1
@@ -5703,7 +5703,7 @@ MonoBehaviour:
   Price: 800
   modelSkin: {fileID: 1476196098}
   isDown: 0
-  index: 8
+  index: 2
   BuyButton: {fileID: 2136266682}
   isDollar: 0
   isAccessorie: 1
@@ -8633,7 +8633,7 @@ MonoBehaviour:
   Price: 900
   modelSkin: {fileID: 739976949}
   isDown: 0
-  index: 9
+  index: 5
   BuyButton: {fileID: 2136266682}
   isDollar: 0
   isAccessorie: 1
@@ -10778,7 +10778,7 @@ MonoBehaviour:
   Price: 500
   modelSkin: {fileID: 1081065918}
   isDown: 0
-  index: 5
+  index: 6
   BuyButton: {fileID: 2136266682}
   isDollar: 0
   isAccessorie: 1
@@ -12730,7 +12730,7 @@ MonoBehaviour:
   Price: 600
   modelSkin: {fileID: 526482878}
   isDown: 0
-  index: 6
+  index: 25
   BuyButton: {fileID: 2136266682}
   isDollar: 0
   isAccessorie: 1

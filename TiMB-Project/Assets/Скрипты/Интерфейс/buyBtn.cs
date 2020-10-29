@@ -57,6 +57,12 @@ public class buyBtn : MonoBehaviour
                     BuyButton.interactable = true;
                 }
                 else BuyButton.GetComponentInChildren<Text>().text = "Куплено";
+
+                if (PlayerPrefs.GetInt("PlayerAccess" + index) == 0)
+                {
+                    BuyButton.GetComponentInChildren<Text>().text = Price.ToString(); //Выводим значение денег в кнопку
+                    BuyButton.interactable = true;
+                }
             }
             
                 
