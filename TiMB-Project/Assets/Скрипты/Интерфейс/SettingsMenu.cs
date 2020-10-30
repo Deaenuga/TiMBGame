@@ -8,30 +8,55 @@ using UnityEngine;
 public class SettingsMenu : MonoBehaviour
 {
 
-    public AudioMixer volMixer;
-    public Slider volSlider;
+    public AudioMixer mixerMusic;
+    public AudioMixer mixerSound;
 
-    public GameObject BtnMusic;
-    public bool musicButtonOn;
     public Text musicTextChange;
-    public Button musicBtn;
-    public GameObject soundSlider;
-    
-
-    private Image swapImg;
+    public Text soundTextChange;
 
 
-    
-    
-    
+    public bool isMutedMusic; //музыка отключена 
+    public int  isValueMutedMusic;
+
+    public bool isMutedSound; //звуки отключена 
+    public int  isValueMutedSound;
+
+
+
+
+
     void Start()
     {
-        musicButtonOn = true;
+        if(PlayerPrefs.GetInt("MUTED Music") == 0) //выключена
+        {
+            isMutedMusic = true;
+            isValueMutedMusic = -80;
+            musicTextChange.text = "off";
+        }
+        if (PlayerPrefs.GetInt("MUTED Music") == 1)//включена
+        {
+            isMutedMusic = false;
+            isValueMutedMusic = 0;
+            musicTextChange.text = "on";
+        }
+        mixerMusic.SetFloat("volume", isValueMutedMusic);
 
-        volSlider.value = PlayerPrefs.GetFloat("MVolume");
-        volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
-       // GameMultiLang[] textLang = FindObjectsOfType<GameMultiLang>();
-        
+
+        if (PlayerPrefs.GetInt("MUTED Sound") == 0) //выключена
+        {
+            isMutedSound = true;
+            isValueMutedSound = -80;
+            soundTextChange.text = "off";
+        }
+        if (PlayerPrefs.GetInt("MUTED Sound") == 1)//включена
+        {
+            isMutedSound = false;
+            isValueMutedSound = 0;
+            soundTextChange.text = "on";
+        }
+        mixerSound.SetFloat("volumeSound", isValueMutedSound);
+
+        //AudioListener.pause = isMuted;
 
 
     }
@@ -39,95 +64,81 @@ public class SettingsMenu : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (!musicButtonOn)
-        {
-            volMixer.SetFloat("volume", -60);
-            musicTextChange.text = "off";
-            volSlider.value = -60;
-            soundSlider.SetActive(false);
-            
-
-
-
-        }
-        if (musicButtonOn)
-        {
-            ////volSlider.value = PlayerPrefs.GetFloat("MVolume");
-            //Debug.Log(PlayerPrefs.GetFloat("MVolume"));
-            //volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
-            soundSlider.SetActive(true);
-            musicTextChange.text = "on";
-        }
-
-
-
-        //if (musicButtonOn == true)
+        //if (musicButtonOn)
         //{
+        //    PlayerPrefs.SetFloat("MVolume", 1);
+        //    volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
+        //    PlayerPrefs.Save();
+        //    ////volSlider.value = PlayerPrefs.GetFloat("MVolume");
+        //    //Debug.Log(PlayerPrefs.GetFloat("MVolume"));
+        //    //volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
+        //    //soundSlider.SetActive(true);
         //    musicTextChange.text = "on";
         //}
-        //if (musicButtonOn == false)
+
+        //if (!musicButtonOn)
         //{
+        //    //volMixer.SetFloat("volume", -60);
+
+        //    //volSlider.value = -60;
+        //    //soundSlider.SetActive(false);
+        //    PlayerPrefs.SetFloat("MVolume", -80);
+        //    volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
+        //    PlayerPrefs.Save();
+
         //    musicTextChange.text = "off";
-        //}
 
 
-        //if (volSlider.value == -60)
-        //{
-        //    PlayerPrefs.SetInt("musicON", 0); //Музыка выключена
-        //    musicTextChange.text = "off";
 
         //}
 
 
     }
 
-    public void ChangeVol(float volume)
+
+    public void MusicChange()
     {
-        PlayerPrefs.SetFloat("MVolume", volume);
-        volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
+        isMutedMusic = !isMutedMusic;
+        //AudioListener.pause = isMuted;
+        if (isMutedMusic == false)
+        {
+            isValueMutedMusic = 0;
+            mixerMusic.SetFloat("volume", isValueMutedMusic);
+            PlayerPrefs.SetInt("MUTED Music", 1);
+            musicTextChange.text = "on";
+        }
+        if (isMutedMusic == true)
+        {
+            isValueMutedMusic = -80;
+            mixerMusic.SetFloat("volume", isValueMutedMusic);
+            PlayerPrefs.SetInt("MUTED Music", 0);
+            musicTextChange.text = "off";
+        }
+        PlayerPrefs.Save();
+        
+    }
+
+
+    public void SoundChange()
+    {
+        isMutedSound = !isMutedSound;
+        //AudioListener.pause = isMuted;
+        if (isMutedSound == false)
+        {
+            isValueMutedSound = 0;
+            mixerSound.SetFloat("volumeSound", isValueMutedSound);
+            PlayerPrefs.SetInt("MUTED Sound", 1);
+            soundTextChange.text = "on";
+        }
+        if (isMutedSound == true)
+        {
+            isValueMutedSound = -80;
+            mixerSound.SetFloat("volumeSound", isValueMutedSound);
+            PlayerPrefs.SetInt("MUTED Sound", 0);
+            soundTextChange.text = "off";
+        }
         PlayerPrefs.Save();
 
     }
 
-    public void MusicChange()
-    {
-        //musicButtonOn = true;
-        //PlayerPrefs.SetInt("musicON", 1);
-        musicButtonOn = !musicButtonOn;
-
-
-
-        //if (musicButtonOn == true)
-        //{
-        //    musicTextChange.text = "on";
-        //}
-        //if (!musicButtonOn)
-        //{
-        //    musicTextChange.text = "off";
-        //}
-
-        //musicButtonOn = true;
-        //PlayerPrefs.SetInt("musicON", 1);
-
-
-
-        //GetComponent<Button>()..color = Color.green;
-        //if (BtnMusic.GetComponent == musicButtonOn)
-        //{
-        //    BtnMusic.image = musicButtonOff;
-        //    return;
-        //}
-
-        //if (BtnMusic.image == musicButtonOff)
-        //{
-        //    BtnMusic.image = musicButtonOn;
-        //    return;
-        //}
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

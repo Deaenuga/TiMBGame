@@ -14,20 +14,52 @@ public class MainMenu : MonoBehaviour
     public Text textDollar;
     public Text currlevel;
     public AudioSource audioSource;
-    public AudioMixer volMixer;
+    public AudioMixer mixerMusic;
+    public AudioMixer mixerSound;
+
+
 
     void Start()
     {
         // PlayerPrefs.SetInt("FirstStart", 0);
         EraseAll();
-        TextCoin(); 
+        TextCoin();
+
+        //volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
+        if (PlayerPrefs.GetInt("MUTED Music") == 1)
+        {
+            //AudioListener.pause = true;
+            mixerMusic.SetFloat("volume", 0);
+        }
+        if (PlayerPrefs.GetInt("MUTED Music") == 0)
+        {
+            //AudioListener.pause = false;
+            mixerMusic.SetFloat("volume", -80);
+        }
+
+
+        if (PlayerPrefs.GetInt("MUTED Sound") == 1)
+        {
+            //AudioListener.pause = true;
+            mixerSound.SetFloat("volumeSound", 0);
+        }
+        if (PlayerPrefs.GetInt("MUTED Sound") == 0)
+        {
+            //AudioListener.pause = false;
+            mixerSound.SetFloat("volumeSound", -80);
+        }
+
+
+
+
+
         if (Advertisement.isSupported)
         {
             Advertisement.Initialize("3860680", false);
         }
         currlevel.text += " " + PlayerPrefs.GetInt("levelNum").ToString();
 
-        volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
+        //volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
 
     }
 
