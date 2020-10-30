@@ -11,7 +11,7 @@ public class swipe_shop : MonoBehaviour
     float[] pos;
     
 
-    // Update is called once per frame
+
     void Update()
     {
         pos = new float[transform.childCount];

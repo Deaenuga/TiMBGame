@@ -7,7 +7,6 @@ public class BotSkins : MonoBehaviour
 
     public GameObject[] bodys;
     public GameObject[] heads;
-    // Start is called before the first frame update
     void Start()
     {
         int body = Random.Range(0, bodys.Length);

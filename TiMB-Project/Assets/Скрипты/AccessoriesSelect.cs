@@ -5,7 +5,6 @@ using UnityEngine;
 public class AccessoriesSelect : MonoBehaviour
 {
     public GameObject[] accessories;
-    // Start is called before the first frame update
     void Update()
     {
         int curraccess = PlayerPrefs.GetInt("PlayerAccess");

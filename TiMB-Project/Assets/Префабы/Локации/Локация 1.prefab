@@ -24,7 +24,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1790611973479463425}
   m_Layer: 0
-  m_Name: "\u041B\u043E\u043A\u0430\u0446\u0438\u044F1"
+  m_Name: "\u041B\u043E\u043A\u0430\u0446\u0438\u044F 1"
   m_TagString: FirstPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

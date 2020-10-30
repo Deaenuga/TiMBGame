@@ -16,7 +16,6 @@ public class Bot : MonoBehaviour
     private float time = 0;
     public float botSpeed;
     private float currLetter = 0;
-    // Start is called before the first frame update
     void Start()
     {
         countLetters = string.Join(" ", FindObjectOfType<CreatePlatformWithLetters>().letters[PlayerPrefs.GetInt("currLevel")]).Length;
@@ -51,7 +50,6 @@ public class Bot : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(FindObjectOfType<Moving>().start) time += Time.deltaTime;

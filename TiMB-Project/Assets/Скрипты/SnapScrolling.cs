@@ -40,7 +40,6 @@ public class SnapScrolling : MonoBehaviour
         for (int i = 0; i < panCount; i++)
         {
             instPans[i] = panPrefab[i];
-            //надон\ не клон а на прямую
             if (i == 0) continue;
             instPans[i].transform.localPosition = new Vector2(instPans[i-1].transform.localPosition.x + panPrefab[i].GetComponent<RectTransform>().sizeDelta.x + panOffset,
                 instPans[i].transform.localPosition.y);
@@ -86,11 +85,5 @@ public class SnapScrolling : MonoBehaviour
     {
         isScrolling = scroll;
         if (scroll) scrollRect.inertia = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

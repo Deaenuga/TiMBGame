@@ -9,7 +9,6 @@ public class BotNIcknames : MonoBehaviour
     private TextMesh textMesh;
     public string[] nicks;
 
-    // Start is called before the first frame update
     void Start()
     {
         textMesh = GetComponent<TextMesh>();

@@ -14,32 +14,22 @@ public class BuyPlayerPerson : MonoBehaviour
 
         foreach (var item in buys)
         {
-            if (PlayerPrefs.GetInt("Player" + item.index) == 1)
+            if (PlayerPrefs.GetInt("Player" + item.index) == 1) //Если скин куплен показываем
             {
-
                 item.GetComponent<Button>().interactable = true;
-
-
             }
 
-            if (PlayerPrefs.GetInt("Player" + item.index) == 0)
+            if (PlayerPrefs.GetInt("Player" + item.index) == 0) //Если скин не куплен убираем его
             {
                 item.GetComponent<Button>().onClick.RemoveAllListeners();
                 Destroy(item.gameObject);
-                //print(item.GetComponent<Button>().IsDestroyed());
             }
-            //if (PlayerPrefs.GetInt("Player" + item.index) == 0)
-            //{
-            //    //item.GetComponent<Button>().interactable = false;
-            //    //Destroy(this.gameObject);
-            //    Debug.LogWarning("adad");
-            //    item.GetComponent<Button>().enabled = false;
-            //    item.GetComponent<Button>().interactable = false;
-            //    item.GetComponent<Button>().enabled = false;
-            //    item.GetComponent<Button>().interactable = false;
-            //    Destroy(item.GetComponent<Button>());
-            //}
         }
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 
 }

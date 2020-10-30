@@ -9,8 +9,6 @@ public class BuyPlayer : MonoBehaviour
 {
     private int numPlayer;
     private buyBtn[] buys;
-    
-
 
     public void ChangePlayer()
     {
@@ -52,8 +50,6 @@ public class BuyPlayer : MonoBehaviour
                     Debug.Log("за монеты");
                     PlayerPrefs.Save();
                     UseCoins(price);
-                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;
-                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
                     break;
                 }
 
@@ -70,8 +66,6 @@ public class BuyPlayer : MonoBehaviour
                     Debug.Log("за доллары");
                     PlayerPrefs.Save();
                     UseDollar(price);
-                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;
-                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
                     break;
                 }
             }
@@ -87,8 +81,6 @@ public class BuyPlayer : MonoBehaviour
                     Debug.Log("акксесуар");
                     PlayerPrefs.Save();
                     UseDollar(price);
-                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = true;
-                    //GameObject.FindGameObjectWithTag("BuyButton").GetComponent<Button>().interactable = false;
                     break;
                 }
             }
@@ -96,12 +88,12 @@ public class BuyPlayer : MonoBehaviour
 
 
     }
-    public bool HasEnoughCoins(int amount) //если Было достаточно монет
+    public bool HasEnoughCoins(int amount) //Если было достаточно монет
     {
         return (PlayerPrefs.GetInt("Coins") >= amount);
     }
 
-    public bool HasEnoughDollar(int amount) //если Было достаточно монет
+    public bool HasEnoughDollar(int amount) //Если Было достаточно долларов
     {
         return (PlayerPrefs.GetInt("Dollar") >= amount);
     }

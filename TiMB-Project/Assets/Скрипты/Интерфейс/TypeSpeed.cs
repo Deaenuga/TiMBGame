@@ -15,7 +15,7 @@ public class TypeSpeed : MonoBehaviour
         }
         else
         {
-            this.GetComponent<Text>().text = "Ваша средняя скорость печати:"+Math.Round(PlayerPrefs.GetFloat("TypeSpeed"),2)+" символа в секунду!";
+            this.GetComponent<Text>().text = "Ваша средняя скорость печати:"+Math.Round(PlayerPrefs.GetFloat("TypeSpeed"),2)+" символа в минуту!";
         }
     }
 

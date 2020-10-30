@@ -28,19 +28,14 @@ public class buyBtn : MonoBehaviour
         isDown = true;
         for (int i = 0; i < buttons.Length; i++)
         {
-
-            // modelSkin.SetActive(false);
             if (buttons[i].index!=index) //Если кнопка не выбрана
             {
-                //modelSkin.SetActive(false);
-                Debug.Log(index);
                 buttons[i].GetComponent<Image>().color = Color.white;
                 buttons[i].modelSkin.SetActive(false);
 
             }
             else
             {
-                //Выбран элемент
                 for (int k = 0; k < buttons.Length; k++)
                 {
                     if (k!=i)
@@ -53,14 +48,16 @@ public class buyBtn : MonoBehaviour
 
                 if (PlayerPrefs.GetInt("Player"+index)==0)
                 {
-                    BuyButton.GetComponentInChildren<Text>().text = Price.ToString(); //Выводим значение денег в кнопку
+                    //Выводим значение денег в кнопку
+                    BuyButton.GetComponentInChildren<Text>().text = Price.ToString(); 
                     BuyButton.interactable = true;
                 }
                 else BuyButton.GetComponentInChildren<Text>().text = "Куплено";
 
                 if (PlayerPrefs.GetInt("PlayerAccess" + index) == 0)
                 {
-                    BuyButton.GetComponentInChildren<Text>().text = Price.ToString(); //Выводим значение денег в кнопку
+                    //Выводим значение денег в кнопку
+                    BuyButton.GetComponentInChildren<Text>().text = Price.ToString(); 
                     BuyButton.interactable = true;
                 }
             }

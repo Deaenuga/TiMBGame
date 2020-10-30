@@ -6,13 +6,6 @@ using UnityEngine.Advertisements;
 
 public class NextLvl : MonoBehaviour
 {
-
-    private void Start()
-    {
-        
-    }
-
-// Start is called before the first frame update
     public void Play()
     {
         int GameNum = PlayerPrefs.GetInt("LocationNum");
@@ -72,7 +65,7 @@ public class NextLvl : MonoBehaviour
             }
     }
 
-    public void PlaySceneEndLevel() //Метод с задержкой что бы музыка успеваала проиграться до конца
+    public void PlaySceneEndLevel() //Метод с задержкой что бы музыка успевала доиграть до конца
     {
         Invoke("PlayInvoke", 3f);
     }

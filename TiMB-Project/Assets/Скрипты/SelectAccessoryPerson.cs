@@ -20,25 +20,15 @@ public class SelectAccessoryPerson : MonoBehaviour
             if (PlayerPrefs.GetInt("PlayerAccess" + item.index) == 1)
             {
                 item.GetComponent<Button>().interactable = true;
-                Debug.Log(" куплен "+item.index);
             }
 
             if (PlayerPrefs.GetInt("PlayerAccess" + item.index) == 0)
             {
-                //Debug.Log(" не куплен " + item.index);
                 item.GetComponent<Button>().onClick.RemoveAllListeners();
                 Destroy(item.gameObject);
                 
             }
         }
-
-
-
-
-        //if (index == PlayerPrefs.GetInt("PlayerAccess"))
-        //    SetActive();
-
-
     }
 
     public void Pressed()
@@ -71,7 +61,6 @@ public class SelectAccessoryPerson : MonoBehaviour
                     if (k != i)
                     {
                         this.GetComponent<Image>().color = Color.green;
-
                     }
 
                 }
