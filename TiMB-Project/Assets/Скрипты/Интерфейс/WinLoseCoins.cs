@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -52,7 +53,7 @@ public class WinLoseCoins : MonoBehaviour //Класс для вывода за�
 
         }
 
-        speed.text = "Символов в минуту:" + PlayerPrefs.GetFloat("typeSpeed").ToString();
+        speed.text = "Символов в минуту:" + Math.Round(PlayerPrefs.GetFloat("TypeSpeed"),2).ToString();
     }
 
     public void ButtonVideoAdvertisingX2() //Метод увеличения заработанных монет на уровне в два раза

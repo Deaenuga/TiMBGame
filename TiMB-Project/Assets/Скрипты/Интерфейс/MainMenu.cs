@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.Advertisements;
-
-
+using System;
 
 public class MainMenu : MonoBehaviour
 {
@@ -19,18 +18,8 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        //PlayerPrefs.SetInt("Coins", 100000);
-        //PlayerPrefs.SetInt("Dollar", 100000);
-        //PlayerPrefs.DeleteAll();
-
-        if (PlayerPrefs.GetInt("FirstStart")==0)
-        {
-            PlayerPrefs.SetInt("PlayerAccess", -1);
-            PlayerPrefs.SetInt("LocationNum", 0);
-            PlayerPrefs.SetInt("currLevel", 0);
-            PlayerPrefs.SetInt("levelNum", 1);
-            PlayerPrefs.SetInt("FirstStart", 1);
-        }
+        // PlayerPrefs.SetInt("FirstStart", 0);
+        EraseAll();
         TextCoin(); 
         if (Advertisement.isSupported)
         {
@@ -87,4 +76,70 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Person");
     }
 
+    public void EraseAll()
+    {
+        if (PlayerPrefs.GetInt("FirstStart") == 0)
+        {
+            PlayerPrefs.SetInt("TypeCount", 0);
+            PlayerPrefs.SetInt("TypeSpeed", 0);
+            PlayerPrefs.SetInt("RewardedYear", DateTime.Now.Year - 1);
+            PlayerPrefs.SetInt("RewardedMonth", DateTime.Now.Month - 1);
+            PlayerPrefs.SetInt("RewardedDay", DateTime.Now.Day - 1);
+            PlayerPrefs.SetInt("RewardedHour", DateTime.Now.Hour - 1);
+            PlayerPrefs.SetInt("RewardedMinute", DateTime.Now.Minute - 1);
+            PlayerPrefs.SetInt("RewardedSecond", DateTime.Now.Second - 1);
+            PlayerPrefs.SetInt("PlayerAccess", -1);
+            PlayerPrefs.SetInt("LocationNum", 0);
+            PlayerPrefs.SetInt("currLevel", 0);
+            PlayerPrefs.SetInt("Coins", 10000);
+            PlayerPrefs.SetInt("Dollar", 10000);
+            PlayerPrefs.SetInt("levelNum", 1);
+            PlayerPrefs.SetInt("FirstStart", 1);
+            PlayerPrefs.SetInt("Player0", 0);
+            PlayerPrefs.SetInt("Player1", 0);
+            PlayerPrefs.SetInt("Player2", 0);
+            PlayerPrefs.SetInt("Player3", 0);
+            PlayerPrefs.SetInt("Player4", 0);
+            PlayerPrefs.SetInt("Player5", 0);
+            PlayerPrefs.SetInt("Player6", 0);
+            PlayerPrefs.SetInt("Player7", 0);
+            PlayerPrefs.SetInt("Player8", 0);
+            PlayerPrefs.SetInt("Player9", 0);
+            PlayerPrefs.SetInt("Player10", 0);
+            PlayerPrefs.SetInt("Player11", 0);
+            PlayerPrefs.SetInt("Player12", 0);
+            PlayerPrefs.SetInt("Player13", 0);
+            PlayerPrefs.SetInt("Player14", 0);
+            PlayerPrefs.SetInt("Player15", 0);
+            PlayerPrefs.SetInt("Player16", 0);
+            PlayerPrefs.SetInt("Player17", 0);
+            PlayerPrefs.SetInt("PlayerAccess0", 0);
+            PlayerPrefs.SetInt("PlayerAccess1", 0);
+            PlayerPrefs.SetInt("PlayerAccess2", 0);
+            PlayerPrefs.SetInt("PlayerAccess3", 0);
+            PlayerPrefs.SetInt("PlayerAccess4", 0);
+            PlayerPrefs.SetInt("PlayerAccess5", 0);
+            PlayerPrefs.SetInt("PlayerAccess6", 0);
+            PlayerPrefs.SetInt("PlayerAccess7", 0);
+            PlayerPrefs.SetInt("PlayerAccess8", 0);
+            PlayerPrefs.SetInt("PlayerAccess9", 0);
+            PlayerPrefs.SetInt("PlayerAccess10", 0);
+            PlayerPrefs.SetInt("PlayerAccess11", 0);
+            PlayerPrefs.SetInt("PlayerAccess12", 0);
+            PlayerPrefs.SetInt("PlayerAccess13", 0);
+            PlayerPrefs.SetInt("PlayerAccess14", 0);
+            PlayerPrefs.SetInt("PlayerAccess15", 0);
+            PlayerPrefs.SetInt("PlayerAccess16", 0);
+            PlayerPrefs.SetInt("PlayerAccess17", 0);
+            PlayerPrefs.SetInt("PlayerAccess18", 0);
+            PlayerPrefs.SetInt("PlayerAccess19", 0);
+            PlayerPrefs.SetInt("PlayerAccess20", 0);
+            PlayerPrefs.SetInt("PlayerAccess21", 0);
+            PlayerPrefs.SetInt("PlayerAccess22", 0);
+            PlayerPrefs.SetInt("PlayerAccess23", 0);
+            PlayerPrefs.SetInt("PlayerAccess24", 0);
+            PlayerPrefs.SetInt("PlayerAccess25", 0);
+            PlayerPrefs.SetInt("PlayerAccess26", 0);
+        }
+    }
 }

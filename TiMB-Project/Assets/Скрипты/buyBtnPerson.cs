@@ -40,14 +40,13 @@ public class buyBtnPerson : MonoBehaviour
         for (int i = 0; i < buttons.Length; i++)
         {
 
-            // modelSkin.SetActive(false);
             if (buttons[i].index != index) //Если кнопка не выбрана
             {
-                //modelSkin.SetActive(false);
-                //Debug.Log(index);
-                buttons[i].GetComponent<Image>().color = Color.white;
-                buttons[i].modelSkin.SetActive(false);
-
+                if (buttons[i] != null)
+                {
+                    buttons[i].GetComponent<Image>().color = Color.white;
+                    buttons[i].modelSkin.SetActive(false);
+                }
             }
             else
             {

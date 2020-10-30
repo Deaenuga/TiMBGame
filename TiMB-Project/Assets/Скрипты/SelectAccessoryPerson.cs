@@ -61,6 +61,7 @@ public class SelectAccessoryPerson : MonoBehaviour
         {
             if (buttons[i].index != index) //Если кнопка не выбрана
             {
+                if(buttons[i]!=null)
                 buttons[i].GetComponent<Image>().color = Color.white;
             }
             else

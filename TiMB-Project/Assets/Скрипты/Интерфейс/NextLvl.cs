@@ -19,7 +19,6 @@ public class NextLvl : MonoBehaviour
         int currLevel = PlayerPrefs.GetInt("currLevel");
         if (currLevel > 5)
         {
-            PlayerPrefs.SetInt("levelNum", PlayerPrefs.GetInt("levelNum") + 1);
             GameNum += 1;
             PlayerPrefs.SetInt("LocationNum", GameNum);
             PlayerPrefs.SetInt("currLevel", 0);
@@ -51,19 +50,16 @@ public class NextLvl : MonoBehaviour
             {
                 case (0):
                     {
-                        PlayerPrefs.SetInt("levelNum", PlayerPrefs.GetInt("levelNum") + 1);
                         SceneManager.LoadScene("Game");
                         break;
                     }
                 case (1):
                     {
-                        PlayerPrefs.SetInt("levelNum", PlayerPrefs.GetInt("levelNum") + 1);
                         SceneManager.LoadScene("Game1");
                         break;
                     }
                 case (2):
                     {
-                        PlayerPrefs.SetInt("levelNum", PlayerPrefs.GetInt("levelNum") + 1);
                         SceneManager.LoadScene("Game2");
                         break;
                     }
@@ -87,7 +83,6 @@ public class NextLvl : MonoBehaviour
         int currLevel = PlayerPrefs.GetInt("currLevel");
         if (currLevel > 5)
         {
-            PlayerPrefs.SetInt("levelNum", PlayerPrefs.GetInt("levelNum") + 1);
             GameNum += 1;
             PlayerPrefs.SetInt("LocationNum", GameNum);
             PlayerPrefs.SetInt("currLevel", 0);
@@ -119,19 +114,17 @@ public class NextLvl : MonoBehaviour
             {
                 case (0):
                     {
-                        PlayerPrefs.SetInt("levelNum", PlayerPrefs.GetInt("levelNum") + 1);
+                        
                         SceneManager.LoadScene("Game");
                         break;
                     }
                 case (1):
                     {
-                        PlayerPrefs.SetInt("levelNum", PlayerPrefs.GetInt("levelNum") + 1);
                         SceneManager.LoadScene("Game1");
                         break;
                     }
                 case (2):
                     {
-                        PlayerPrefs.SetInt("levelNum", PlayerPrefs.GetInt("levelNum") + 1);
                         SceneManager.LoadScene("Game2");
                         break;
                     }

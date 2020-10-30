@@ -20,23 +20,18 @@ public class DailyBonus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ///////////////////////////////////
-        //PlayerPrefs.DeleteAll();
-
-        /////////////////////////////////////////////
-        
+        Debug.Log(PlayerPrefs.GetInt("RewardedYear"));
+        Debug.Log(PlayerPrefs.GetInt("RewardedMonth"));
+        Debug.Log(PlayerPrefs.GetInt("RewardedDay"));
+        Debug.Log(PlayerPrefs.GetInt("RewardedHour"));
+        Debug.Log(PlayerPrefs.GetInt("RewardedMinute"));
+        Debug.Log(PlayerPrefs.GetInt("RewardedSecond"));
         DateTime RewardedDT = new DateTime(PlayerPrefs.GetInt("RewardedYear", DateTime.Now.Year), PlayerPrefs.GetInt("RewardedMonth", DateTime.Now.Month), PlayerPrefs.GetInt("RewardedDay", DateTime.Now.Day),
                                            PlayerPrefs.GetInt("RewardedHour", DateTime.Now.Hour), PlayerPrefs.GetInt("RewardedMinute", DateTime.Now.Minute), PlayerPrefs.GetInt("RewardedSecond", DateTime.Now.Second));
-        panelsCreate();
+        Debug.Log(RewardedDT);
         currDay = PlayerPrefs.GetInt("currDay");
-        if (RewardedDT <= DateTime.Now && (DateTime.Now - RewardedDT).Days == 0)
+        if (RewardedDT <= DateTime.Now && (DateTime.Now - RewardedDT).Days >= 0)
         {
-            panelsCreate();
-        }
-        else
-        if (RewardedDT < DateTime.Now && (DateTime.Now - RewardedDT).Days < 0)
-        {
-           
             panelsCreate();
         }
         else
