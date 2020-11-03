@@ -1626,20 +1626,20 @@ MonoBehaviour:
   - {fileID: 306961129}
   - {fileID: 1585954828}
   - {fileID: 1818112629}
-  - {fileID: 549236660}
+  - {fileID: 1189473075}
   - {fileID: 570302066}
   - {fileID: 1395096797}
   - {fileID: 1718399561}
-  - {fileID: 1189473075}
-  - {fileID: 1830853737}
-  - {fileID: 1830853736}
+  - {fileID: 549236660}
+  - {fileID: 1830853729}
+  - {fileID: 1830853731}
+  - {fileID: 1830853732}
+  - {fileID: 1830853733}
+  - {fileID: 1830853729}
   - {fileID: 1830853735}
   - {fileID: 1830853734}
-  - {fileID: 1830853733}
-  - {fileID: 1830853732}
-  - {fileID: 1830853731}
-  - {fileID: 1830853730}
-  - {fileID: 1830853729}
+  - {fileID: 1830853736}
+  - {fileID: 1830853737}
 --- !u!1 &1085773229
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,11 +3224,6 @@ Transform:
 --- !u!1 &1830853729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6823554347330260133, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
-  m_PrefabInstance: {fileID: 1830853727}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1830853730 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4654828093489043870, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
   m_PrefabInstance: {fileID: 1830853727}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1830853731 stripped

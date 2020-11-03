@@ -429,31 +429,31 @@ PrefabInstance:
     - target: {fileID: 55235808552922961, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 1469752756738608892, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 1521390645193683118, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 2075416886704414392, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 2075416886752282198, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 2075416887166812589, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 2075416887303341191, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 2075416887406446665, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: m_Name
       value: PlayerSkins
@@ -505,47 +505,47 @@ PrefabInstance:
     - target: {fileID: 2075416888210741558, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 3021055829945818856, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 3255301018268768972, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 3701522082240406234, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 4746340752060057773, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 5057180566598531571, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 5374368384659751364, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 6747217238227694258, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 7773081115064224090, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 9079223892136859630, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     - target: {fileID: 9168362352694722527, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
       propertyPath: coins
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 666153723}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
 --- !u!4 &264652548 stripped
@@ -621,11 +621,6 @@ GameObject:
 --- !u!1 &264652562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5380929126589123246, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
-  m_PrefabInstance: {fileID: 264652547}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &264652563 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8325165167283375632, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
   m_PrefabInstance: {fileID: 264652547}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &264652564 stripped
@@ -1049,6 +1044,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &666153723 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5563819829000663164, guid: 9769404b01ca7f64596c96f13642db89, type: 3}
+  m_PrefabInstance: {fileID: 1318747090}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &816605482
@@ -1914,20 +1920,20 @@ MonoBehaviour:
   - {fileID: 264652556}
   - {fileID: 264652555}
   - {fileID: 264652554}
-  - {fileID: 264652553}
+  - {fileID: 264652549}
   - {fileID: 264652552}
   - {fileID: 264652551}
   - {fileID: 264652550}
-  - {fileID: 264652549}
-  - {fileID: 264652566}
-  - {fileID: 264652565}
-  - {fileID: 264652564}
-  - {fileID: 264652563}
-  - {fileID: 264652562}
-  - {fileID: 264652561}
-  - {fileID: 264652560}
+  - {fileID: 264652553}
   - {fileID: 264652559}
+  - {fileID: 264652560}
+  - {fileID: 264652561}
+  - {fileID: 264652562}
   - {fileID: 264652558}
+  - {fileID: 264652564}
+  - {fileID: 264652560}
+  - {fileID: 264652565}
+  - {fileID: 264652566}
 --- !u!1 &1086474126
 GameObject:
   m_ObjectHideFlags: 3
@@ -2507,6 +2513,14 @@ PrefabInstance:
     - target: {fileID: 2133515653809069888, guid: 0958389201c6fae4cba00e69cdba0484, type: 3}
       propertyPath: m_Name
       value: Audio ManagerMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133515653809069888, guid: 0958389201c6fae4cba00e69cdba0484, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222896498946727585, guid: 0958389201c6fae4cba00e69cdba0484, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0958389201c6fae4cba00e69cdba0484, type: 3}

@@ -4,6 +4,7 @@ using UnityEngine.Audio;
 using System;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -143,8 +144,6 @@ public class SettingsMenu : MonoBehaviour
 
     public void EraseAll()
     {
-        if (PlayerPrefs.GetInt("FirstStart") == 0)
-        {
             PlayerPrefs.SetInt("TypeCount", 0);
             PlayerPrefs.SetInt("TypeSpeed", 0);
             PlayerPrefs.SetInt("RewardedYear", DateTime.Now.Year - 1);
@@ -205,7 +204,7 @@ public class SettingsMenu : MonoBehaviour
             PlayerPrefs.SetInt("PlayerAccess24", 0);
             PlayerPrefs.SetInt("PlayerAccess25", 0);
             PlayerPrefs.SetInt("PlayerAccess26", 0);
+            SceneManager.LoadScene("Menu");
         }
-    }
 
 }

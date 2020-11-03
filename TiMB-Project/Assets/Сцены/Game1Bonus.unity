@@ -442,11 +442,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6823554347330260133, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
   m_PrefabInstance: {fileID: 59593319}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &59593322 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4654828093489043870, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
-  m_PrefabInstance: {fileID: 59593319}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &59593323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 261269508340287159, guid: 5a6a67724671bf342a5056bec0114aab, type: 3}
@@ -2647,20 +2642,20 @@ MonoBehaviour:
   - {fileID: 1716229324}
   - {fileID: 1527264332}
   - {fileID: 937057359}
-  - {fileID: 444285120}
+  - {fileID: 959832940}
   - {fileID: 444045435}
   - {fileID: 1447790178}
   - {fileID: 697567694}
-  - {fileID: 959832940}
-  - {fileID: 59593329}
-  - {fileID: 59593328}
+  - {fileID: 444285120}
+  - {fileID: 59593321}
+  - {fileID: 59593323}
+  - {fileID: 59593324}
+  - {fileID: 59593325}
+  - {fileID: 59593321}
   - {fileID: 59593327}
   - {fileID: 59593326}
-  - {fileID: 59593325}
-  - {fileID: 59593324}
-  - {fileID: 59593323}
-  - {fileID: 59593322}
-  - {fileID: 59593321}
+  - {fileID: 59593328}
+  - {fileID: 59593329}
 --- !u!1 &1086474126
 GameObject:
   m_ObjectHideFlags: 3
