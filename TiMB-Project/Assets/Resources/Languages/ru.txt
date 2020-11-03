@@ -16,3 +16,4 @@ RESUMETEXT=Продолжить
 QUITTEXT=Выход
 SHOPTEXT=Магазин
 PERSONTEXT=Персонаж
+RESETTEXT=Сброс
