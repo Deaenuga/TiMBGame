@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerSelect : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject[] playerModels;
 
     private Cinemachine.CinemachineFreeLook gameCamera;

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 90a303209f10fbd42a5ee4a675437ba3, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -22186,6 +22186,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 884e895d96cae3f4e96c655e42735a4c, type: 3}
   m_PrefabInstance: {fileID: 957507906}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &973385834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 156215951597921152, guid: 526995767a9b52d4cad1cc34b1a9fca5, type: 3}
+  m_PrefabInstance: {fileID: 1064363859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &975625876
 GameObject:
   m_ObjectHideFlags: 0
@@ -23235,6 +23240,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 0bb815189bfbd9b40949a8a13e057756, type: 3}
   m_PrefabInstance: {fileID: 1015705536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1017506141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 336426154441121629, guid: 470e1599eb10f5c43946097842253d74, type: 3}
+  m_PrefabInstance: {fileID: 1071582078}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1020222667
 PrefabInstance:
@@ -31678,6 +31688,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 345a6ff4fb9ff2c43b6730e9277452b5, type: 3}
   m_PrefabInstance: {fileID: 1419168664}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1432991385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1790611973479463424, guid: b3a5c52fc542d41429a055cc4942742e, type: 3}
+  m_PrefabInstance: {fileID: 1646702118}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1435387058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32520,6 +32535,56 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 69cc4e84612aea74184753a303dfa3b7, type: 3}
   m_PrefabInstance: {fileID: 1445194497}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1454438048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454438050}
+  - component: {fileID: 1454438049}
+  m_Layer: 0
+  m_Name: PersonManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1454438049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454438048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680b142e42b446c40a168436d6852262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationPrefab:
+  - {fileID: 1432991385}
+  - {fileID: 1017506141}
+  - {fileID: 973385834}
+  day: {fileID: 2100000, guid: d0d2ca49d1510114482d4bf1ee6fe9c9, type: 2}
+  night: {fileID: 2100000, guid: 90a303209f10fbd42a5ee4a675437ba3, type: 2}
+  sun: {fileID: 545174308}
+--- !u!4 &1454438050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454438048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.374654, y: 2.2425137, z: -1.101224}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1456822259
 GameObject:
   m_ObjectHideFlags: 0
@@ -38534,6 +38599,7 @@ GameObject:
   - component: {fileID: 1681285243}
   - component: {fileID: 1681285242}
   - component: {fileID: 1681285241}
+  - component: {fileID: 1681285244}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -38606,6 +38672,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &1681285244
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681285240}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1682283244
 GameObject:
   m_ObjectHideFlags: 0
