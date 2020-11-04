@@ -415,7 +415,6 @@ GameObject:
   - component: {fileID: 9881326}
   - component: {fileID: 9881325}
   - component: {fileID: 9881324}
-  - component: {fileID: 9881328}
   m_Layer: 5
   m_Name: "Button3 \u0437\u043E\u043C\u0431\u0438"
   m_TagString: Skin4
@@ -563,35 +562,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9881322}
   m_CullTransparentMesh: 0
---- !u!114 &9881328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9881322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &13097686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3015,7 +2985,6 @@ GameObject:
   - component: {fileID: 149564242}
   - component: {fileID: 149564241}
   - component: {fileID: 149564240}
-  - component: {fileID: 149564244}
   m_Layer: 5
   m_Name: "Button6 \u043E\u0447\u043A\u0438 \u0441\u0442\u0430\u0440\u044B\u0435"
   m_TagString: Skin5
@@ -3162,35 +3131,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149564238}
   m_CullTransparentMesh: 0
---- !u!114 &149564244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149564238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &150847989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3886,7 +3826,6 @@ GameObject:
   - component: {fileID: 179707950}
   - component: {fileID: 179707949}
   - component: {fileID: 179707948}
-  - component: {fileID: 179707952}
   m_Layer: 5
   m_Name: "Button13 $\u0447\u0435\u043B \u0441 \u043A\u0440\u0430\u0441\u043D\u044B\u043C
     \u0433\u0430\u043B\u0441\u0442\u0443\u043A\u043E\u043C"
@@ -4035,35 +3974,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179707946}
   m_CullTransparentMesh: 0
---- !u!114 &179707952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179707946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &183717381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5160,7 +5070,6 @@ GameObject:
   - component: {fileID: 244070395}
   - component: {fileID: 244070394}
   - component: {fileID: 244070393}
-  - component: {fileID: 244070397}
   m_Layer: 5
   m_Name: "Button9 \u0442\u043E\u043F\u043E\u0440 \u043A\u0440\u0430\u0441\u043D\u044B\u0439"
   m_TagString: Skin5
@@ -5307,35 +5216,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244070391}
   m_CullTransparentMesh: 0
---- !u!114 &244070397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244070391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &250530294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5633,7 +5513,6 @@ GameObject:
   - component: {fileID: 265083317}
   - component: {fileID: 265083316}
   - component: {fileID: 265083314}
-  - component: {fileID: 265083315}
   m_Layer: 5
   m_Name: "Button0 \u0447\u0435\u043B \u0432 \u043F\u043E\u043B\u043E\u0441\u0430\u0442\u043E\u0439
     \u043C\u0430\u0439\u043A\u0435"
@@ -5677,35 +5556,6 @@ MonoBehaviour:
   index: 0
   modelSkin: {fileID: 298699325}
   isDown: 0
---- !u!114 &265083315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 265083312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &265083316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6400,7 +6250,6 @@ GameObject:
   - component: {fileID: 283862344}
   - component: {fileID: 283862343}
   - component: {fileID: 283862342}
-  - component: {fileID: 283862346}
   m_Layer: 5
   m_Name: "Button16 $ \u0442\u0435\u043B\u043A\u0430 \u0432 \u0440\u043E\u0437\u043E\u0432\u043E\u043C
     \u043F\u043B\u0430\u0442\u044C\u0435"
@@ -6549,35 +6398,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283862340}
   m_CullTransparentMesh: 0
---- !u!114 &283862346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283862340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &288914983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6733,7 +6553,6 @@ GameObject:
   - component: {fileID: 294317789}
   - component: {fileID: 294317788}
   - component: {fileID: 294317787}
-  - component: {fileID: 294317791}
   m_Layer: 5
   m_Name: "Button9 $\u0447\u0435\u043B \u0432 \u0431\u0435\u043B\u043E\u043C \u043A\u043E\u0441\u0442\u044E\u043C\u0435"
   m_TagString: Skin1
@@ -6881,35 +6700,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294317785}
   m_CullTransparentMesh: 0
---- !u!114 &294317791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294317785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &294687810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7729,7 +7519,6 @@ GameObject:
   - component: {fileID: 330109761}
   - component: {fileID: 330109760}
   - component: {fileID: 330109759}
-  - component: {fileID: 330109763}
   m_Layer: 5
   m_Name: "Button12 $ \u0447\u0435\u043B \u0441 \u0446\u0435\u043F\u044C\u044E \u0438
     \u0432 \u0441\u043F\u043E\u0440\u0442\u0438\u0432\u043A\u0430\u0445"
@@ -7878,35 +7667,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330109757}
   m_CullTransparentMesh: 0
---- !u!114 &330109763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330109757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &331920956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8542,7 +8302,6 @@ GameObject:
   - component: {fileID: 361317748}
   - component: {fileID: 361317747}
   - component: {fileID: 361317746}
-  - component: {fileID: 361317750}
   m_Layer: 5
   m_Name: "Button2 \u0431\u0438\u0442\u0430 \u0441\u0435\u0440\u0430\u044F"
   m_TagString: Skin2
@@ -8689,35 +8448,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361317744}
   m_CullTransparentMesh: 0
---- !u!114 &361317750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361317744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &361994980
 GameObject:
   m_ObjectHideFlags: 0
@@ -8731,7 +8461,6 @@ GameObject:
   - component: {fileID: 361994984}
   - component: {fileID: 361994983}
   - component: {fileID: 361994982}
-  - component: {fileID: 361994986}
   m_Layer: 5
   m_Name: "Button8 \u0442\u0435\u043B\u043A\u0430 \u0441 \u0441 \u043F\u043E\u0432\u044F\u0437\u043A\u043E\u0439
     \u0432 \u0447\u0435\u0440\u043D\u043E\u043C"
@@ -8880,35 +8609,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361994980}
   m_CullTransparentMesh: 0
---- !u!114 &361994986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361994980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &363151082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10036,7 +9736,6 @@ GameObject:
   - component: {fileID: 438887026}
   - component: {fileID: 438887025}
   - component: {fileID: 438887024}
-  - component: {fileID: 438887028}
   m_Layer: 5
   m_Name: "Button7 \u043E\u0447\u043A\u0438"
   m_TagString: Skin5
@@ -10183,35 +9882,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438887022}
   m_CullTransparentMesh: 0
---- !u!114 &438887028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438887022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &442546121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13769,7 +13439,6 @@ GameObject:
   - component: {fileID: 597998388}
   - component: {fileID: 597998387}
   - component: {fileID: 597998386}
-  - component: {fileID: 597998390}
   m_Layer: 5
   m_Name: "Button5 \u043D\u043E\u0436"
   m_TagString: Skin5
@@ -13916,35 +13585,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597998384}
   m_CullTransparentMesh: 0
---- !u!114 &597998390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 597998384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &598676725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17485,7 +17125,6 @@ GameObject:
   - component: {fileID: 764519746}
   - component: {fileID: 764519745}
   - component: {fileID: 764519744}
-  - component: {fileID: 764519748}
   m_Layer: 5
   m_Name: "Button11 $ \u043F\u0430\u043D\u043A \u0441 \u0436\u0435\u043B\u0442\u044B\u043C\u0438
     \u0432\u043E\u043B\u043E\u0441\u0430\u043C\u0438"
@@ -17634,35 +17273,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764519742}
   m_CullTransparentMesh: 0
---- !u!114 &764519748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764519742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &766058731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24183,7 +23793,6 @@ GameObject:
   - component: {fileID: 1057116790}
   - component: {fileID: 1057116789}
   - component: {fileID: 1057116788}
-  - component: {fileID: 1057116792}
   m_Layer: 5
   m_Name: "Button3 \u0431\u0438\u0442\u0430"
   m_TagString: Skin3
@@ -24330,35 +23939,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057116786}
   m_CullTransparentMesh: 0
---- !u!114 &1057116792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057116786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1061060536
 GameObject:
   m_ObjectHideFlags: 0
@@ -24372,7 +23952,6 @@ GameObject:
   - component: {fileID: 1061060541}
   - component: {fileID: 1061060540}
   - component: {fileID: 1061060538}
-  - component: {fileID: 1061060539}
   m_Layer: 5
   m_Name: "Button1 \u0431\u0438\u0442\u0430 \u0441 \u043D\u0430\u043A\u043E\u043D\u0435\u0447\u043D\u0438\u043A\u043E\u043C"
   m_TagString: Skin1
@@ -24414,35 +23993,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 3
   isDown: 0
---- !u!114 &1061060539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061060536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1061060540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24894,7 +24444,6 @@ GameObject:
   - component: {fileID: 1082960129}
   - component: {fileID: 1082960128}
   - component: {fileID: 1082960127}
-  - component: {fileID: 1082960131}
   m_Layer: 5
   m_Name: "Button1 \u0447\u0435\u043B \u0432 \u043A\u0435\u043F\u043A\u0435"
   m_TagString: Skin2
@@ -25042,35 +24591,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082960125}
   m_CullTransparentMesh: 0
---- !u!114 &1082960131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082960125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1086079006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27740,7 +27260,6 @@ GameObject:
   - component: {fileID: 1198019646}
   - component: {fileID: 1198019645}
   - component: {fileID: 1198019644}
-  - component: {fileID: 1198019648}
   m_Layer: 5
   m_Name: "Button10 $\u043E\u043C\u043E\u043D\u043E\u0432\u0435\u0446"
   m_TagString: Skin2
@@ -27888,35 +27407,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198019642}
   m_CullTransparentMesh: 0
---- !u!114 &1198019648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198019642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1214821629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28214,7 +27704,6 @@ GameObject:
   - component: {fileID: 1232952885}
   - component: {fileID: 1232952884}
   - component: {fileID: 1232952883}
-  - component: {fileID: 1232952887}
   m_Layer: 5
   m_Name: "Button17 $ \u0442\u0435\u043B\u043A\u0430 \u0441 \u0436\u0435\u043B\u0442\u044B\u043C\u0438
     \u0432\u043E\u043B\u043E\u0441\u0430\u043C\u0438"
@@ -28363,35 +27852,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232952881}
   m_CullTransparentMesh: 0
---- !u!114 &1232952887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232952881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1237355907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28547,7 +28007,6 @@ GameObject:
   - component: {fileID: 1242841644}
   - component: {fileID: 1242841643}
   - component: {fileID: 1242841642}
-  - component: {fileID: 1242841646}
   m_Layer: 5
   m_Name: "Button15 $ \u0442\u0435\u043B\u043A\u0430 \u0432 \u0441\u0438\u043D\u0435\u0439
     \u043C\u0430\u0439\u043A\u0435"
@@ -28696,35 +28155,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242841640}
   m_CullTransparentMesh: 0
---- !u!114 &1242841646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242841640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1244372939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32026,7 +31456,6 @@ GameObject:
   - component: {fileID: 1438719721}
   - component: {fileID: 1438719720}
   - component: {fileID: 1438719719}
-  - component: {fileID: 1438719723}
   m_Layer: 5
   m_Name: "Button4 \u043B\u043E\u043C"
   m_TagString: Skin4
@@ -32173,35 +31602,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438719717}
   m_CullTransparentMesh: 0
---- !u!114 &1438719723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438719717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1442417185
 GameObject:
   m_ObjectHideFlags: 0
@@ -32215,7 +31615,6 @@ GameObject:
   - component: {fileID: 1442417189}
   - component: {fileID: 1442417188}
   - component: {fileID: 1442417187}
-  - component: {fileID: 1442417191}
   m_Layer: 5
   m_Name: "Button6 \u0442\u0435\u043B\u043A\u0430 \u0441 \u043A\u043E\u0440\u043E\u0442\u043A\u043E\u0439
     \u0441\u0442\u0440\u0438\u0436\u043A\u043E\u0439"
@@ -32364,35 +31763,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442417185}
   m_CullTransparentMesh: 0
---- !u!114 &1442417191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442417185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1442439272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35208,7 +34578,6 @@ GameObject:
   - component: {fileID: 1577205615}
   - component: {fileID: 1577205614}
   - component: {fileID: 1577205613}
-  - component: {fileID: 1577205617}
   m_Layer: 5
   m_Name: "Button14 $ \u043C\u0435\u0434\u0441\u0435\u0441\u0442\u0440\u0430"
   m_TagString: Skin5
@@ -35356,35 +34725,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577205611}
   m_CullTransparentMesh: 0
---- !u!114 &1577205617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577205611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1578302090
 GameObject:
   m_ObjectHideFlags: 0
@@ -35398,7 +34738,6 @@ GameObject:
   - component: {fileID: 1578302094}
   - component: {fileID: 1578302093}
   - component: {fileID: 1578302092}
-  - component: {fileID: 1578302096}
   m_Layer: 5
   m_Name: "Button4 \u0442\u0435\u043B\u043A\u0430 \u0441 \u043F\u043E\u0432\u044F\u0437\u043A\u043E\u0439"
   m_TagString: Skin5
@@ -35546,35 +34885,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578302090}
   m_CullTransparentMesh: 0
---- !u!114 &1578302096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578302090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1582437904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36179,7 +35489,6 @@ GameObject:
   - component: {fileID: 1630428449}
   - component: {fileID: 1630428448}
   - component: {fileID: 1630428447}
-  - component: {fileID: 1630428451}
   m_Layer: 5
   m_Name: "Button2 \u043C\u0435\u043D\u0442"
   m_TagString: Skin3
@@ -36327,35 +35636,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630428445}
   m_CullTransparentMesh: 0
---- !u!114 &1630428451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630428445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1634664604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37675,7 +36955,6 @@ GameObject:
   - component: {fileID: 1664381083}
   - component: {fileID: 1664381082}
   - component: {fileID: 1664381081}
-  - component: {fileID: 1664381085}
   m_Layer: 5
   m_Name: "Button7 \u043C\u043E\u043D\u0430\u0448\u043A\u0430"
   m_TagString: Skin5
@@ -37823,35 +37102,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664381079}
   m_CullTransparentMesh: 0
---- !u!114 &1664381085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664381079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1664436377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39894,7 +39144,6 @@ GameObject:
   - component: {fileID: 1744417205}
   - component: {fileID: 1744417204}
   - component: {fileID: 1744417203}
-  - component: {fileID: 1744417207}
   m_Layer: 5
   m_Name: "Button8 \u0442\u043E\u043F\u043E\u0440 \u0434\u043B\u044F \u0440\u0443\u0431\u043A\u0438
     \u043C\u044F\u0441\u0430"
@@ -40042,35 +39291,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744417201}
   m_CullTransparentMesh: 0
---- !u!114 &1744417207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744417201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1750462201
 GameObject:
   m_ObjectHideFlags: 0
@@ -42105,7 +41325,6 @@ GameObject:
   - component: {fileID: 1868714506}
   - component: {fileID: 1868714505}
   - component: {fileID: 1868714504}
-  - component: {fileID: 1868714508}
   m_Layer: 5
   m_Name: "Button5 \u0447\u0435\u043B \u0432 \u0441\u0438\u043D\u0435\u0439 \u043A\u0435\u043F\u043A\u0435"
   m_TagString: Skin5
@@ -42253,35 +41472,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868714502}
   m_CullTransparentMesh: 0
---- !u!114 &1868714508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868714502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 831402499}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1869522413
 PrefabInstance:
   m_ObjectHideFlags: 0
