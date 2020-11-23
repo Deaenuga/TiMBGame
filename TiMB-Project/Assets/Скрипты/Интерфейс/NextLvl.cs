@@ -67,7 +67,8 @@ public class NextLvl : MonoBehaviour
 
     public void PlaySceneEndLevel() //Метод с задержкой что бы музыка успевала доиграть до конца
     {
-        Invoke("PlayInvoke", 3f);
+        //Invoke("PlayInvoke", 3f);
+        PlayInvoke();
     }
 
     void PlayInvoke()

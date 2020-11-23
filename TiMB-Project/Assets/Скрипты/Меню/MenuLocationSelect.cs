@@ -31,5 +31,11 @@ public class MenuLocationSelect : MonoBehaviour
             }
             else locationPrefab[i].SetActive(false);
         }
+        if(location>=locationPrefab.Length)
+        {
+            locationPrefab[2].SetActive(true);
+            FindObjectOfType<Skybox>().material = night;
+            sun.intensity = 0.5f;
+        }
     }
 }

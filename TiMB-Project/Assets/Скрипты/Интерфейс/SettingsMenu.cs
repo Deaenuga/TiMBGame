@@ -152,13 +152,14 @@ public class SettingsMenu : MonoBehaviour
             PlayerPrefs.SetInt("RewardedHour", DateTime.Now.Hour - 1);
             PlayerPrefs.SetInt("RewardedMinute", DateTime.Now.Minute - 1);
             PlayerPrefs.SetInt("RewardedSecond", DateTime.Now.Second - 1);
-            PlayerPrefs.SetInt("PlayerAccess", -1);
+            PlayerPrefs.SetInt("currDay", 0);
             PlayerPrefs.SetInt("LocationNum", 0);
             PlayerPrefs.SetInt("currLevel", 0);
-            PlayerPrefs.SetInt("Coins", 10000);
-            PlayerPrefs.SetInt("Dollar", 10000);
+            PlayerPrefs.SetInt("Coins", 0);
+            PlayerPrefs.SetInt("Dollar", 0);
             PlayerPrefs.SetInt("levelNum", 1);
             PlayerPrefs.SetInt("FirstStart", 1);
+            PlayerPrefs.SetInt("currSkin", 0);
             PlayerPrefs.SetInt("Player0", 0);
             PlayerPrefs.SetInt("Player1", 0);
             PlayerPrefs.SetInt("Player2", 0);
@@ -204,6 +205,7 @@ public class SettingsMenu : MonoBehaviour
             PlayerPrefs.SetInt("PlayerAccess24", 0);
             PlayerPrefs.SetInt("PlayerAccess25", 0);
             PlayerPrefs.SetInt("PlayerAccess26", 0);
+            PlayerPrefs.SetInt("PlayerAccess", -1);
             SceneManager.LoadScene("Menu");
         }
 

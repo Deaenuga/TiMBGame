@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class BuyPlayer : MonoBehaviour
 {
     private int numPlayer;
-    private buyBtn[] buys;
+    private ButtonPlayer[] buysPlayer;
+    private ButtonAccsessory[] buysAccessory;
 
     public void ChangePlayer()
     {
@@ -19,18 +20,21 @@ public class BuyPlayer : MonoBehaviour
 
     void Start()
     {
-        buys = FindObjectsOfType<buyBtn>();
+        buysPlayer = FindObjectsOfType<ButtonPlayer>();
+        buysAccessory = FindObjectsOfType<ButtonAccsessory>();
     }
     private void Update()
     {
-        foreach (var item in buys)
+        foreach (var item in buysPlayer)
         {
-            if (PlayerPrefs.GetInt("Player" + item.index) == 1)
+            if (PlayerPrefs.GetInt("Player" + item.GetComponent<buyBtn>().index) == 1)
             {
                 item.GetComponent<Button>().interactable = false;
             }
-
-            if (PlayerPrefs.GetInt("PlayerAccess" + item.index) == 1)
+        }
+        foreach (var item in buysAccessory)
+        {
+            if (PlayerPrefs.GetInt("PlayerAccess" + item.GetComponent<buyBtn>().index) == 1)
             {
                 item.GetComponent<Button>().interactable = false;
             }
@@ -42,11 +46,11 @@ public class BuyPlayer : MonoBehaviour
         int price = Convert.ToInt32(GameObject.FindGameObjectWithTag("BuyButton").GetComponentInChildren<Text>().text);
         if (HasEnoughCoins(price))
         {
-            for (int i = 0; i < buys.Length; i++)
+            for (int i = 0; i < buysPlayer.Length; i++)
             {
-                if (buys[i].isDown && !buys[i].isDollar && !buys[i].isAccessorie)
+                if (buysPlayer[i].GetComponent<buyBtn>().isDown && !buysPlayer[i].GetComponent<buyBtn>().isDollar && !buysPlayer[i].GetComponent<buyBtn>().isAccessorie)
                 {
-                    PlayerPrefs.SetInt("Player" + buys[i].index, 1);
+                    PlayerPrefs.SetInt("Player" + buysPlayer[i].GetComponent<buyBtn>().index, 1);
                     Debug.Log("за монеты");
                     PlayerPrefs.Save();
                     UseCoins(price);
@@ -58,11 +62,11 @@ public class BuyPlayer : MonoBehaviour
 
         if (HasEnoughDollar(price))
         {
-            for (int i = 0; i < buys.Length; i++)
+            for (int i = 0; i < buysPlayer.Length; i++)
             {
-                if (buys[i].isDown && buys[i].isDollar)
+                if (buysPlayer[i].GetComponent<buyBtn>().isDown && buysPlayer[i].GetComponent<buyBtn>().isDollar)
                 {
-                    PlayerPrefs.SetInt("Player" + buys[i].index, 1);
+                    PlayerPrefs.SetInt("Player" + buysPlayer[i].GetComponent<buyBtn>().index, 1);
                     Debug.Log("за доллары");
                     PlayerPrefs.Save();
                     UseDollar(price);
@@ -73,11 +77,11 @@ public class BuyPlayer : MonoBehaviour
 
         if (HasEnoughDollar(price))
         {
-            for (int i = 0; i < buys.Length; i++)
+            for (int i = 0; i < buysAccessory.Length; i++)
             {
-                if (buys[i].isDown && buys[i].isAccessorie)
+                if (buysAccessory[i].GetComponent<buyBtn>().isDown && buysAccessory[i].GetComponent<buyBtn>().isAccessorie && buysAccessory[i].GetComponent<buyBtn>().isDollar)
                 {
-                    PlayerPrefs.SetInt("PlayerAccess" + buys[i].index, 1);
+                    PlayerPrefs.SetInt("PlayerAccess" + buysAccessory[i].GetComponent<buyBtn>().index, 1);
                     Debug.Log("акксесуар");
                     PlayerPrefs.Save();
                     UseDollar(price);
