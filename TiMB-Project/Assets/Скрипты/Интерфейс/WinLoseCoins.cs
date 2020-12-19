@@ -28,6 +28,13 @@ public class WinLoseCoins : MonoBehaviour //Класс для вывода за�
 
         if (PlayerPrefs.GetInt("Win") == 1)
         {
+            PlayerPrefs.SetInt("winCount", PlayerPrefs.GetInt("winCount") + 1);
+            if(PlayerPrefs.GetInt("winCount")==3)
+                if (Advertisement.IsReady())
+                {
+                    PlayerPrefs.SetInt("winCount", 0);
+                    Advertisement.Show("video");
+                }
             buttonLose.SetActive(false);
             buttonWin.SetActive(true);
 
@@ -63,10 +70,13 @@ public class WinLoseCoins : MonoBehaviour //Класс для вывода за�
         }
         else
         {
-            if (Advertisement.IsReady())
-            {
-                Advertisement.Show("video");
-            }
+            PlayerPrefs.SetInt("loseCount", PlayerPrefs.GetInt("loseCount") + 1);
+            if (PlayerPrefs.GetInt("loseCount") == 3)
+                if (Advertisement.IsReady())
+                {
+                    PlayerPrefs.SetInt("loseCount", 0);
+                    Advertisement.Show("video");
+                }
             buttonLose.SetActive(true);
             buttonWin.SetActive(false);
             if (lang == "ru")

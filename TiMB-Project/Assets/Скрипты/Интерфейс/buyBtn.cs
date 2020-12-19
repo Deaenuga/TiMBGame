@@ -12,6 +12,9 @@ public class buyBtn : MonoBehaviour
     public bool isDown=false;
     public int index;
     public Button BuyButton;
+    public Image waluteImg;
+    public Sprite dollarImg;
+    public Sprite coinImg;
     public bool isDollar;
     public bool isAccessorie;
 
@@ -49,6 +52,10 @@ public class buyBtn : MonoBehaviour
                 if (PlayerPrefs.GetInt("Player"+index)==0)
                 {
                     //Выводим значение денег в кнопку
+                    waluteImg.enabled = true;
+                    if(isDollar || isAccessorie)
+                    waluteImg.sprite = dollarImg;
+                    else waluteImg.sprite = coinImg;
                     BuyButton.GetComponentInChildren<Text>().text = Price.ToString(); 
                     BuyButton.interactable = true;
                 }

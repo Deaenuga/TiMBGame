@@ -110,6 +110,8 @@ public class SettingsMenu : MonoBehaviour
     public void EraseAll()
     {
             PlayerPrefs.SetInt("TypeCount", 0);
+            PlayerPrefs.SetInt("loseCount", 0);
+            PlayerPrefs.SetInt("winCount", 0);
             PlayerPrefs.SetInt("TypeSpeed", 0);
             PlayerPrefs.SetInt("FirstTime", 0);
             PlayerPrefs.SetInt("RewardedYear", DateTime.Now.Year - 1);

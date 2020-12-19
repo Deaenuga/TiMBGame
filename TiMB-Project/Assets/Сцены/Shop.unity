@@ -535,6 +535,9 @@ MonoBehaviour:
   isDown: 0
   index: 3
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &59871416
@@ -1104,6 +1107,9 @@ MonoBehaviour:
   isDown: 0
   index: 2
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &109649644
@@ -1556,6 +1562,9 @@ MonoBehaviour:
   isDown: 0
   index: 14
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &211185110
@@ -1963,6 +1972,9 @@ MonoBehaviour:
   isDown: 0
   index: 4
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &240645675
@@ -2152,6 +2164,9 @@ MonoBehaviour:
   isDown: 0
   index: 9
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &240650950
@@ -2522,6 +2537,9 @@ MonoBehaviour:
   isDown: 0
   index: 6
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &276428204
@@ -2842,6 +2860,9 @@ MonoBehaviour:
   isDown: 0
   index: 0
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &309297141
@@ -3484,6 +3505,9 @@ MonoBehaviour:
   isDown: 0
   index: 5
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &393709574
@@ -3661,6 +3685,9 @@ MonoBehaviour:
   isDown: 0
   index: 1
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &396265772
@@ -4995,6 +5022,9 @@ MonoBehaviour:
   isDown: 0
   index: 24
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &661266630
@@ -5713,6 +5743,9 @@ MonoBehaviour:
   isDown: 0
   index: 2
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &745016019
@@ -5890,6 +5923,9 @@ MonoBehaviour:
   isDown: 0
   index: 3
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &782784559
@@ -6068,6 +6104,9 @@ MonoBehaviour:
   isDown: 0
   index: 13
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &785290885
@@ -7153,6 +7192,9 @@ MonoBehaviour:
   isDown: 0
   index: 11
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &972085978
@@ -7324,6 +7366,81 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &976910367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976910368}
+  - component: {fileID: 976910370}
+  - component: {fileID: 976910369}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &976910368
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976910367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2136266680}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 104.2, y: 12}
+  m_SizeDelta: {x: 77.29812, y: 69.47937}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &976910369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976910367}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &976910370
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976910367}
+  m_CullTransparentMesh: 0
 --- !u!1 &993483550 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 114382, guid: 42f5d995889cc63489778ac357e5ee77, type: 3}
@@ -7513,6 +7630,9 @@ MonoBehaviour:
   isDown: 0
   index: 12
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &1024375443
@@ -8593,6 +8713,9 @@ MonoBehaviour:
   isDown: 0
   index: 5
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &1196895454
@@ -8793,7 +8916,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 676715273}
   m_HandleRect: {fileID: 676715272}
   m_Direction: 0
-  m_Value: 0.5
+  m_Value: 0.49996948
   m_Size: 0.9988532
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -9052,6 +9175,9 @@ MonoBehaviour:
   isDown: 0
   index: 8
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &1218642892
@@ -9751,6 +9877,9 @@ MonoBehaviour:
   isDown: 0
   index: 0
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &1324170185
@@ -10654,6 +10783,9 @@ MonoBehaviour:
   isDown: 0
   index: 1
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &1571670430
@@ -10910,6 +11042,9 @@ MonoBehaviour:
   isDown: 0
   index: 6
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &1657452986
@@ -11167,6 +11302,9 @@ MonoBehaviour:
   isDown: 0
   index: 15
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &1695389536
@@ -11505,6 +11643,9 @@ MonoBehaviour:
   isDown: 0
   index: 10
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &1722455899
@@ -11996,6 +12137,9 @@ MonoBehaviour:
   isDown: 0
   index: 17
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &1827910318
@@ -12383,6 +12527,9 @@ MonoBehaviour:
   isDown: 0
   index: 7
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &1892747924
@@ -12561,6 +12708,9 @@ MonoBehaviour:
   isDown: 0
   index: 16
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 0
 --- !u!114 &1896743278
@@ -12738,6 +12888,9 @@ MonoBehaviour:
   isDown: 0
   index: 25
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 1
   isAccessorie: 1
 --- !u!114 &1957195852
@@ -13128,6 +13281,9 @@ MonoBehaviour:
   isDown: 0
   index: 4
   BuyButton: {fileID: 2136266682}
+  waluteImg: {fileID: 976910369}
+  dollarImg: {fileID: 21300000, guid: 231e15e686761f74a8c6b2ef8963d152, type: 3}
+  coinImg: {fileID: 21300000, guid: e704cb5289722654794812764e018661, type: 3}
   isDollar: 0
   isAccessorie: 0
 --- !u!114 &2072149583
@@ -13474,6 +13630,7 @@ RectTransform:
   m_LocalScale: {x: 0.69479, y: 0.69479, z: 0.69479}
   m_Children:
   - {fileID: 1290478728}
+  - {fileID: 976910368}
   m_Father: {fileID: 1060650847}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -113,6 +113,8 @@ public class DailyBonus : MonoBehaviour
     public void EraseAll()
     {
         PlayerPrefs.SetInt("FirstTime", 0);
+        PlayerPrefs.SetInt("loseCount", 0);
+        PlayerPrefs.SetInt("winCount", 0);
         PlayerPrefs.SetInt("FirstStart", 1);
         PlayerPrefs.SetInt("TypeCount", 0);
         PlayerPrefs.SetInt("TypeSpeed", 0);
