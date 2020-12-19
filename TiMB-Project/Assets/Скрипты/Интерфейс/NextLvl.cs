@@ -8,9 +8,10 @@ public class NextLvl : MonoBehaviour
 {
     public void Play()
     {
+        Debug.Log(PlayerPrefs.GetInt("currLevel"));
         int GameNum = PlayerPrefs.GetInt("LocationNum");
         int currLevel = PlayerPrefs.GetInt("currLevel");
-        if (currLevel > 5)
+        if (currLevel==20)
         {
             GameNum += 1;
             PlayerPrefs.SetInt("LocationNum", GameNum);
@@ -38,7 +39,29 @@ public class NextLvl : MonoBehaviour
                     break;
             }
         }
-        else
+        else if(currLevel==6 || currLevel == 13)
+        {
+            switch (GameNum)
+            {
+                case (0):
+                    {
+                        SceneManager.LoadScene("GameBonus");
+                        break;
+                    }
+                case (1):
+                    {
+                        SceneManager.LoadScene("Game1Bonus");
+                        break;
+                    }
+                case (2):
+                    {
+                        SceneManager.LoadScene("Game2Bonus");
+                        break;
+                    }
+                default:
+                    break;
+            }
+        } else
             switch (GameNum)
             {
                 case (0):
@@ -75,7 +98,7 @@ public class NextLvl : MonoBehaviour
     {
         int GameNum = PlayerPrefs.GetInt("LocationNum");
         int currLevel = PlayerPrefs.GetInt("currLevel");
-        if (currLevel > 5)
+        if (currLevel == 20)
         {
             GameNum += 1;
             PlayerPrefs.SetInt("LocationNum", GameNum);
@@ -103,12 +126,34 @@ public class NextLvl : MonoBehaviour
                     break;
             }
         }
+        else if (currLevel == 6 || currLevel == 13)
+        {
+            switch (GameNum)
+            {
+                case (0):
+                    {
+                        SceneManager.LoadScene("GameBonus");
+                        break;
+                    }
+                case (1):
+                    {
+                        SceneManager.LoadScene("Game1Bonus");
+                        break;
+                    }
+                case (2):
+                    {
+                        SceneManager.LoadScene("Game2Bonus");
+                        break;
+                    }
+                default:
+                    break;
+            }
+        }
         else
             switch (GameNum)
             {
                 case (0):
                     {
-                        
                         SceneManager.LoadScene("Game");
                         break;
                     }
@@ -130,6 +175,7 @@ public class NextLvl : MonoBehaviour
 
             }
     }
+
 
     public void Menu()
     {

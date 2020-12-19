@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 121218236}
   - component: {fileID: 121218238}
   - component: {fileID: 121218237}
+  - component: {fileID: 121218239}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -388,6 +389,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121218235}
   m_CullTransparentMesh: 0
+--- !u!114 &121218239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121218235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a1c8a755ebe1841816e3a5b3aca1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: DAILY5
 --- !u!1 &145420405
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +413,7 @@ GameObject:
   - component: {fileID: 145420406}
   - component: {fileID: 145420408}
   - component: {fileID: 145420407}
+  - component: {fileID: 145420409}
   m_Layer: 5
   m_Name: NumberDay
   m_TagString: Untagged
@@ -467,6 +482,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145420405}
   m_CullTransparentMesh: 0
+--- !u!114 &145420409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145420405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a1c8a755ebe1841816e3a5b3aca1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: DAILY1
 --- !u!1 &155873935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114177733606087622, guid: fdce7a722c35906468292c084d7fc8c5, type: 3}
       propertyPath: defaultLang
-      value: en
+      value: ru
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdce7a722c35906468292c084d7fc8c5, type: 3}
@@ -1867,6 +1895,8 @@ MonoBehaviour:
   - {fileID: 685483939}
   mainCanvas: {fileID: 1759858187}
   dailyCanvas: {fileID: 1155612972}
+  mixerMusic: {fileID: 0}
+  mixerSound: {fileID: 0}
   claimButton: {fileID: 936492877}
 --- !u!114 &639321230 stripped
 MonoBehaviour:
@@ -1952,6 +1982,7 @@ GameObject:
   - component: {fileID: 683684795}
   - component: {fileID: 683684797}
   - component: {fileID: 683684796}
+  - component: {fileID: 683684798}
   m_Layer: 5
   m_Name: NumberDay
   m_TagString: Untagged
@@ -2020,6 +2051,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683684794}
   m_CullTransparentMesh: 0
+--- !u!114 &683684798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683684794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a1c8a755ebe1841816e3a5b3aca1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: DAILY2
 --- !u!1 &684357898
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,6 +2600,7 @@ GameObject:
   - component: {fileID: 763145433}
   - component: {fileID: 763145435}
   - component: {fileID: 763145434}
+  - component: {fileID: 763145436}
   m_Layer: 5
   m_Name: Text Entry
   m_TagString: Untagged
@@ -2604,7 +2649,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f26cd25194bcf44458d97dfba58de596, type: 3}
-    m_FontSize: 118
+    m_FontSize: 84
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2615,7 +2660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u0445\u043E\u0434"
+  m_Text: "\u0414\u043E\u0431\u0440\u043E \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u0442\u044C"
 --- !u!222 &763145435
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2624,6 +2669,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763145432}
   m_CullTransparentMesh: 0
+--- !u!114 &763145436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763145432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a1c8a755ebe1841816e3a5b3aca1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: DAILYHEADER
 --- !u!1 &766264683
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,6 +3248,7 @@ GameObject:
   - component: {fileID: 900559426}
   - component: {fileID: 900559428}
   - component: {fileID: 900559427}
+  - component: {fileID: 900559429}
   m_Layer: 5
   m_Name: NumberDay
   m_TagString: Untagged
@@ -3258,6 +3317,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900559425}
   m_CullTransparentMesh: 0
+--- !u!114 &900559429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900559425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a1c8a755ebe1841816e3a5b3aca1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: DAILY3
 --- !u!1001 &925378821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4668,6 +4740,7 @@ GameObject:
   - component: {fileID: 1222356561}
   - component: {fileID: 1222356563}
   - component: {fileID: 1222356562}
+  - component: {fileID: 1222356564}
   m_Layer: 5
   m_Name: NumberDay
   m_TagString: Untagged
@@ -4736,6 +4809,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222356560}
   m_CullTransparentMesh: 0
+--- !u!114 &1222356564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222356560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a1c8a755ebe1841816e3a5b3aca1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: DAILY4
 --- !u!224 &1224379291 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 193916622258261088, guid: 6d6a67db35ff9bd4da23457ac31ba1e2, type: 3}
@@ -4958,12 +5044,12 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 59b5237702cfb5541b911ee81f4c3d53, type: 3}
     - target: {fileID: 114315437051833356, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+      value: English
       objectReference: {fileID: 0}
     - target: {fileID: 114315437051833356, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Image
       value: 
-      objectReference: {fileID: 21300000, guid: 6f03c38478a96f14aa7011c699d0583b, type: 3}
+      objectReference: {fileID: 21300000, guid: f037125550de2df4986f4e7ad979fb8c, type: 3}
     - target: {fileID: 114315437051833356, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
       value: Russian
@@ -4980,6 +5066,14 @@ PrefabInstance:
       propertyPath: m_Colors.m_PressedColor.a
       value: 0.50980395
       objectReference: {fileID: 0}
+    - target: {fileID: 114315437051833356, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[0].m_Text
+      value: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114315437051833356, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[0].m_Image
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f03c38478a96f14aa7011c699d0583b, type: 3}
     - target: {fileID: 114365461246457088, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
       propertyPath: m_Color.r
       value: 0.40392157
@@ -5030,6 +5124,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114827514095333128, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
       propertyPath: myLangs.Array.data[1]
+      value: en
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827514095333128, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
+      propertyPath: myLangs.Array.data[0]
       value: ru
       objectReference: {fileID: 0}
     - target: {fileID: 114916124345860780, guid: 98771098b2ae76a4ca4f74a7c286a6e0, type: 3}
@@ -6765,6 +6863,7 @@ GameObject:
   - component: {fileID: 1832827733}
   - component: {fileID: 1832827735}
   - component: {fileID: 1832827734}
+  - component: {fileID: 1832827736}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -6833,6 +6932,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832827732}
   m_CullTransparentMesh: 0
+--- !u!114 &1832827736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832827732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a1c8a755ebe1841816e3a5b3aca1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: DAILYCLAIM
 --- !u!1 &1872293127
 GameObject:
   m_ObjectHideFlags: 0
@@ -7138,6 +7250,8 @@ MonoBehaviour:
   - {fileID: 685483939}
   mainCanvas: {fileID: 1759858187}
   dailyCanvas: {fileID: 1155612972}
+  mixerMusic: {fileID: 24100000, guid: 134572c1bd88b764b895ae1266b8ee51, type: 2}
+  mixerSound: {fileID: 24100000, guid: e76c47fc592b1f14da7cc2b267a8872a, type: 2}
   claimButton: {fileID: 936492877}
 --- !u!1 &1990728902
 GameObject:

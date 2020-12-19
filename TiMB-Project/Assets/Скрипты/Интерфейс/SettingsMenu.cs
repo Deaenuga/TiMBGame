@@ -62,41 +62,6 @@ public class SettingsMenu : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
-    {
-
-        //if (musicButtonOn)
-        //{
-        //    PlayerPrefs.SetFloat("MVolume", 1);
-        //    volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
-        //    PlayerPrefs.Save();
-        //    ////volSlider.value = PlayerPrefs.GetFloat("MVolume");
-        //    //Debug.Log(PlayerPrefs.GetFloat("MVolume"));
-        //    //volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
-        //    //soundSlider.SetActive(true);
-        //    musicTextChange.text = "on";
-        //}
-
-        //if (!musicButtonOn)
-        //{
-        //    //volMixer.SetFloat("volume", -60);
-
-        //    //volSlider.value = -60;
-        //    //soundSlider.SetActive(false);
-        //    PlayerPrefs.SetFloat("MVolume", -80);
-        //    volMixer.SetFloat("volume", PlayerPrefs.GetFloat("MVolume"));
-        //    PlayerPrefs.Save();
-
-        //    musicTextChange.text = "off";
-
-
-
-        //}
-
-
-    }
-
-
     public void MusicChange()
     {
         isMutedMusic = !isMutedMusic;
@@ -146,6 +111,7 @@ public class SettingsMenu : MonoBehaviour
     {
             PlayerPrefs.SetInt("TypeCount", 0);
             PlayerPrefs.SetInt("TypeSpeed", 0);
+            PlayerPrefs.SetInt("FirstTime", 0);
             PlayerPrefs.SetInt("RewardedYear", DateTime.Now.Year - 1);
             PlayerPrefs.SetInt("RewardedMonth", DateTime.Now.Month - 1);
             PlayerPrefs.SetInt("RewardedDay", DateTime.Now.Day - 1);
@@ -160,7 +126,7 @@ public class SettingsMenu : MonoBehaviour
             PlayerPrefs.SetInt("levelNum", 1);
             PlayerPrefs.SetInt("FirstStart", 1);
             PlayerPrefs.SetInt("currSkin", 0);
-            PlayerPrefs.SetInt("Player0", 0);
+            PlayerPrefs.SetInt("Player0", 1);
             PlayerPrefs.SetInt("Player1", 0);
             PlayerPrefs.SetInt("Player2", 0);
             PlayerPrefs.SetInt("Player3", 0);

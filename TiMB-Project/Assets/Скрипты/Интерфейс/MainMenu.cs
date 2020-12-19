@@ -49,7 +49,7 @@ public class MainMenu : MonoBehaviour
 
         if (Advertisement.isSupported)
         {
-            Advertisement.Initialize("3860680", false);
+            Advertisement.Initialize("3860681", false);
         }
         currlevel.text += " " + PlayerPrefs.GetInt("levelNum").ToString();
 

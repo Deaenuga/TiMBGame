@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
@@ -12,13 +13,16 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        FindObjectOfType<Moving>().paused = false;
         Time.timeScale = 1f;
         //isClicked = false;
     }
 
     public void Pause()
     {
+        //FindObjectOfType<InputField>().
         pauseMenuUI.SetActive(true);
+        FindObjectOfType<Moving>().paused = true;
         Time.timeScale = 0f;
         //isClicked = true;
     }
@@ -36,8 +40,8 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Invoke("QuitGameInvoke", 0.5f);
-        
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void QuitGameInvoke()
