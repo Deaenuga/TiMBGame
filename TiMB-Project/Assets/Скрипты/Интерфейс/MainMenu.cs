@@ -19,6 +19,9 @@ public class MainMenu : MonoBehaviour
 
 
 
+
+
+
     void Start()
     {
         //EraseAll();
@@ -42,6 +45,10 @@ public class MainMenu : MonoBehaviour
         {
             mixerSound.SetFloat("volumeSound", -80);
         }
+
+
+
+
 
 
 

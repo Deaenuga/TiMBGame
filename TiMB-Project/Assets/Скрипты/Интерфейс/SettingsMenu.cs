@@ -177,6 +177,7 @@ public class SettingsMenu : MonoBehaviour
             PlayerPrefs.SetInt("ButtonItem1", 0);
             PlayerPrefs.SetInt("ButtonItem2", 0);
             PlayerPrefs.SetInt("ButtonItem3", 0);
+            PlayerPrefs.SetInt("PlayerTraining", 0);
             SceneManager.LoadScene("Menu");
         }
 
