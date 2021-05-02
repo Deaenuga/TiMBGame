@@ -174,6 +174,9 @@ public class SettingsMenu : MonoBehaviour
             PlayerPrefs.SetInt("PlayerAccess25", 0);
             PlayerPrefs.SetInt("PlayerAccess26", 0);
             PlayerPrefs.SetInt("PlayerAccess", -1);
+            PlayerPrefs.SetInt("ButtonItem1", 0);
+            PlayerPrefs.SetInt("ButtonItem2", 0);
+            PlayerPrefs.SetInt("ButtonItem3", 0);
             SceneManager.LoadScene("Menu");
         }
 

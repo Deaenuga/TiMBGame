@@ -100,15 +100,15 @@ public class DailyBonus : MonoBehaviour
     private void panelsCreate()
     {
         currDay = PlayerPrefs.GetInt("currDay");
-        for (int i = 0; i < daysPanel.Length; i++)
-        {
-            daysPanel[i].GetComponent<Image>().color = Color.grey;//Все остальные
-        }
+        //for (int i = 0; i < daysPanel.Length; i++)
+        //{
+        //    daysPanel[i].GetComponent<Image>().color = Color.grey;//Все остальные
+        //}
         for (int i = 0; i < currDay; i++)
         {
             daysPanel[i].GetComponent<Image>().color = Color.red; //Собранные
         }
-        daysPanel[currDay].GetComponent<Image>().color = Color.yellow; //Желтый текущий день
+        daysPanel[currDay].GetComponent<Image>().color = Color.green; //Желтый текущий день
     }
     public void EraseAll()
     {
@@ -180,6 +180,9 @@ public class DailyBonus : MonoBehaviour
         PlayerPrefs.SetInt("PlayerAccess24", 0);
         PlayerPrefs.SetInt("PlayerAccess25", 0);
         PlayerPrefs.SetInt("PlayerAccess26", 0);
+        PlayerPrefs.SetInt("ButtonItem1", 0);
+        PlayerPrefs.SetInt("ButtonItem2", 0);
+        PlayerPrefs.SetInt("ButtonItem3", 0);
         PlayerPrefs.SetInt("PlayerAccess", -1);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuLocationSelect : MonoBehaviour
 {
@@ -8,7 +9,14 @@ public class MenuLocationSelect : MonoBehaviour
     public Material day;
     public Material night;
     public Light sun;
-    // Start is called before the first frame update
+
+    public GameObject CanvasPeson;
+    public GameObject SkinsPerson;
+    public GameObject CanvasAchievements;
+
+
+
+
     void Start()
     {
         int location = PlayerPrefs.GetInt("LocationNum");
@@ -38,4 +46,16 @@ public class MenuLocationSelect : MonoBehaviour
             sun.intensity = 0.5f;
         }
     }
+
+    public void Achievements()
+    {
+        CanvasPeson.gameObject.SetActive(false);
+        SkinsPerson.gameObject.SetActive(false);
+        CanvasAchievements.gameObject.SetActive(true);
+    }
+
+
+
+
+
 }

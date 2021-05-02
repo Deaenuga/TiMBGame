@@ -26,3 +26,4 @@ DAILY4=День 4
 DAILY5=День 5
 REPEATLVL=Заново
 NEXTLVL=Следующий
+ACHIEVEMENTSTEXT=Достижения
