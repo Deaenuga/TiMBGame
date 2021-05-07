@@ -23,6 +23,7 @@ public class MenuLocationSelect : MonoBehaviour
     public VideoClip[] Video;
     public GameObject VideoTraining;
     public Canvas CanvasDailyBonus;
+    public Canvas CanvasMenu;
     int count = 0;
 
 
@@ -66,12 +67,14 @@ public class MenuLocationSelect : MonoBehaviour
             CanvasTraining.gameObject.SetActive(false); //отключаем canvas обучение
             BackTraining.SetActive(false); //отключаем задний фон
             VideoTraining.SetActive(false);
+            
 
 
         }
 
         if (PlayerPrefs.GetInt("PlayerTraining") == 0) //Если обучение не пройдено
         {
+            CanvasMenu.gameObject.SetActive(false);
             CanvasDailyBonus.gameObject.SetActive(false); //включаю бонусы
             //убираем все видео
             //задний план
@@ -79,6 +82,7 @@ public class MenuLocationSelect : MonoBehaviour
 
             //сделать массив из видео идти по циклу и если доходим до конца то обучение пройдено
             CanvasTraining.gameObject.SetActive(true);
+
         }
     }
 

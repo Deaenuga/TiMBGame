@@ -5816,7 +5816,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310403862}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b439138c270b8394a9efeb6ee116483d, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: dc3f628ac4c919648827f57d2dca0736, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -8382,11 +8382,12 @@ MonoBehaviour:
   CanvasTraining: {fileID: 730488405}
   BackTraining: {fileID: 430170790}
   Video:
-  - {fileID: 32900000, guid: b439138c270b8394a9efeb6ee116483d, type: 3}
-  - {fileID: 32900000, guid: 6e8b23a6eb265a94dbba55a618ec6ee9, type: 3}
-  - {fileID: 32900000, guid: e1da8d45defed754a9a6c1e22477193a, type: 3}
+  - {fileID: 32900000, guid: dc3f628ac4c919648827f57d2dca0736, type: 3}
+  - {fileID: 32900000, guid: 2790f24aa11ad414db328ff2c4014f70, type: 3}
+  - {fileID: 32900000, guid: 729727e9c1f088944ab0b7926756e607, type: 3}
   VideoTraining: {fileID: 1310403862}
   CanvasDailyBonus: {fileID: 1155612975}
+  CanvasMenu: {fileID: 1759858190}
 --- !u!4 &2008087407
 Transform:
   m_ObjectHideFlags: 0
