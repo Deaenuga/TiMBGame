@@ -2009,8 +2009,8 @@ MonoBehaviour:
   - {fileID: 685483939}
   mainCanvas: {fileID: 1759858187}
   dailyCanvas: {fileID: 1155612972}
-  mixerMusic: {fileID: 0}
-  mixerSound: {fileID: 0}
+  mixerMusic: {fileID: 24100000, guid: 134572c1bd88b764b895ae1266b8ee51, type: 2}
+  mixerSound: {fileID: 24100000, guid: e76c47fc592b1f14da7cc2b267a8872a, type: 2}
   claimButton: {fileID: 936492877}
 --- !u!114 &639321230 stripped
 MonoBehaviour:
@@ -6839,8 +6839,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2008087406}
-        m_TargetAssemblyTypeName: MenuLocationSelect, Assembly-CSharp
+      - m_Target: {fileID: 2008087408}
+        m_TargetAssemblyTypeName: MenuTraining, Assembly-CSharp
         m_MethodName: SkipTraining
         m_Mode: 1
         m_Arguments:
@@ -7307,8 +7307,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2008087406}
-        m_TargetAssemblyTypeName: MenuLocationSelect, Assembly-CSharp
+      - m_Target: {fileID: 2008087408}
+        m_TargetAssemblyTypeName: MenuTraining, Assembly-CSharp
         m_MethodName: ContinueTrainingVideo
         m_Mode: 1
         m_Arguments:
@@ -8350,6 +8350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2008087407}
   - component: {fileID: 2008087406}
+  - component: {fileID: 2008087408}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -8376,18 +8377,6 @@ MonoBehaviour:
   day: {fileID: 2100000, guid: d0d2ca49d1510114482d4bf1ee6fe9c9, type: 2}
   night: {fileID: 2100000, guid: 90a303209f10fbd42a5ee4a675437ba3, type: 2}
   sun: {fileID: 1382326843}
-  CanvasPeson: {fileID: 0}
-  SkinsPerson: {fileID: 0}
-  CanvasAchievements: {fileID: 0}
-  CanvasTraining: {fileID: 730488405}
-  BackTraining: {fileID: 430170790}
-  Video:
-  - {fileID: 32900000, guid: dc3f628ac4c919648827f57d2dca0736, type: 3}
-  - {fileID: 32900000, guid: 2790f24aa11ad414db328ff2c4014f70, type: 3}
-  - {fileID: 32900000, guid: 729727e9c1f088944ab0b7926756e607, type: 3}
-  VideoTraining: {fileID: 1310403862}
-  CanvasDailyBonus: {fileID: 1155612975}
-  CanvasMenu: {fileID: 1759858190}
 --- !u!4 &2008087407
 Transform:
   m_ObjectHideFlags: 0
@@ -8402,6 +8391,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2008087408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008087405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b157fd37cfc9245877c56f3d648c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanvasTraining: {fileID: 730488405}
+  BackTraining: {fileID: 430170790}
+  Video:
+  - {fileID: 32900000, guid: dc3f628ac4c919648827f57d2dca0736, type: 3}
+  - {fileID: 32900000, guid: 2790f24aa11ad414db328ff2c4014f70, type: 3}
+  - {fileID: 32900000, guid: 729727e9c1f088944ab0b7926756e607, type: 3}
+  VideoTraining: {fileID: 1310403862}
+  CanvasDailyBonus: {fileID: 1155612975}
+  CanvasMenu: {fileID: 1759858190}
 --- !u!1 &2012653436
 GameObject:
   m_ObjectHideFlags: 0

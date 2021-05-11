@@ -8063,7 +8063,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 13.200012, y: -817}
+  m_AnchoredPosition: {x: 13.199951, y: -817}
   m_SizeDelta: {x: -374.50647, y: 155}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309434725
@@ -36884,6 +36884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1454438050}
   - component: {fileID: 1454438049}
+  - component: {fileID: 1454438051}
   m_Layer: 0
   m_Name: PersonManager
   m_TagString: Untagged
@@ -36910,14 +36911,6 @@ MonoBehaviour:
   day: {fileID: 2100000, guid: d0d2ca49d1510114482d4bf1ee6fe9c9, type: 2}
   night: {fileID: 2100000, guid: 90a303209f10fbd42a5ee4a675437ba3, type: 2}
   sun: {fileID: 545174308}
-  CanvasPeson: {fileID: 798007417}
-  SkinsPerson: {fileID: 1068891632}
-  CanvasAchievements: {fileID: 1643166461}
-  CanvasTraining: {fileID: 0}
-  BackTraining: {fileID: 0}
-  Video: []
-  VideoTraining: {fileID: 0}
-  CanvasDailyBonus: {fileID: 0}
 --- !u!4 &1454438050
 Transform:
   m_ObjectHideFlags: 0
@@ -36932,6 +36925,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454438051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454438048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d185efcac0f434438ed711b8f4e8b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanvasPeson: {fileID: 798007417}
+  SkinsPerson: {fileID: 1068891632}
+  CanvasAchievements: {fileID: 1643166461}
 --- !u!1 &1456822259
 GameObject:
   m_ObjectHideFlags: 0
